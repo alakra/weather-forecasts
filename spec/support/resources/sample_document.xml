@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dwml xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0" xsi:noNamespaceSchemaLocation="http://www.nws.noaa.gov/forecasts/xml/DWMLgen/schema/DWML.xsd">
+  <head>
+    <product srsName="WGS 1984" concise-name="time-series" operational-mode="official">
+      <title>NOAAs National Weather Service Forecast Data</title>
+      <field>meteorological</field>
+      <category>forecast</category>
+      <creation-date refresh-frequency="PT1H">2014-02-26T23:45:57Z</creation-date>
+    </product>
+    <source>
+      <more-information>http://www.nws.noaa.gov/forecasts/xml/</more-information>
+      <production-center>
+        Meteorological Development Laboratory
+        <sub-center>Product Generation Branch</sub-center>
+      </production-center>
+      <disclaimer>http://www.nws.noaa.gov/disclaimer.html</disclaimer>
+      <credit>http://www.weather.gov/</credit>
+      <credit-logo>http://www.weather.gov/images/xml_logo.gif</credit-logo>
+      <feedback>http://www.weather.gov/feedback.php</feedback>
+    </source>
+  </head>
+  <data>
+    <location>
+      <location-key>point1</location-key>
+      <point latitude="38.99" longitude="-77.01" />
+    </location>
+    <moreWeatherInformation applicable-location="point1">http://forecast.weather.gov/MapClick.php?textField1=38.99&amp;textField2=-77.01</moreWeatherInformation>
+    <time-layout time-coordinate="local" summarization="none">
+      <layout-key>k-p24h-n8-1</layout-key>
+      <start-valid-time>2014-02-26T07:00:00-05:00</start-valid-time>
+      <end-valid-time>2014-02-26T19:00:00-05:00</end-valid-time>
+      <start-valid-time>2014-02-27T07:00:00-05:00</start-valid-time>
+      <end-valid-time>2014-02-27T19:00:00-05:00</end-valid-time>
+      <start-valid-time>2014-02-28T07:00:00-05:00</start-valid-time>
+      <end-valid-time>2014-02-28T19:00:00-05:00</end-valid-time>
+      <start-valid-time>2014-03-01T07:00:00-05:00</start-valid-time>
+      <end-valid-time>2014-03-01T19:00:00-05:00</end-valid-time>
+      <start-valid-time>2014-03-02T07:00:00-05:00</start-valid-time>
+      <end-valid-time>2014-03-02T19:00:00-05:00</end-valid-time>
+      <start-valid-time>2014-03-03T07:00:00-05:00</start-valid-time>
+      <end-valid-time>2014-03-03T19:00:00-05:00</end-valid-time>
+      <start-valid-time>2014-03-04T07:00:00-05:00</start-valid-time>
+      <end-valid-time>2014-03-04T19:00:00-05:00</end-valid-time>
+      <start-valid-time>2014-03-05T07:00:00-05:00</start-valid-time>
+      <end-valid-time>2014-03-05T19:00:00-05:00</end-valid-time>
+    </time-layout>
+    <parameters applicable-location="point1">
+      <temperature type="maximum" units="Fahrenheit" time-layout="k-p24h-n8-1">
+        <name>Daily Maximum Temperature</name>
+        <value>35</value>
+        <value>37</value>
+        <value>26</value>
+        <value>38</value>
+        <value>44</value>
+        <value>39</value>
+        <value>35</value>
+        <value>32</value>
+      </temperature>
+    </parameters>
+  </data>
+</dwml>

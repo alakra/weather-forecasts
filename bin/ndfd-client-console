@@ -1,0 +1,21 @@
+#!/usr/bin/env ruby
+
+require 'rubygems'
+require 'bundler/setup'
+
+require 'nokogiri'
+
+$: << File.join(File.dirname(__FILE__), "..", "lib")
+
+require 'ndfd/client'
+require 'ndfd/client/help_console'
+
+require 'irb'
+require 'pp'
+
+client = NDFD.client
+
+h = NDFD::Client::HelpConsole.new
+h.display_welcome
+
+IRB.start
