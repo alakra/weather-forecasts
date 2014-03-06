@@ -1,6 +1,8 @@
 # National Digital Forecast Database (NDFD) API Client for Ruby
 --------------------------------------------------------------------------------
 
+[![Build Status](https://travis-ci.org/alakra/ndfd-weather-forecast-client.png?branch=master)](https://travis-ci.org/alakra/ndfd-weather-forecast-client)
+
 ## Summary
 
 This library provides API client access to NOAA's NDFD database
