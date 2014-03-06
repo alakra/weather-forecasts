@@ -19,3 +19,4 @@ module NDFD
 end
 
 require 'ndfd/client'
+require 'ndfd/client/version'

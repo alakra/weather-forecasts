@@ -1,5 +1,7 @@
 ENV["ENV"] = "test"
 
+require 'ndfd'
+
 Bundler.require(:default, NDFD.env)
 
 Time.zone = 'UTC'

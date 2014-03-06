@@ -7,7 +7,7 @@ require 'nokogiri'
 
 $: << File.join(File.dirname(__FILE__), "..", "lib")
 
-require 'ndfd/client'
+require 'ndfd'
 require 'ndfd/client/help_console'
 
 require 'irb'

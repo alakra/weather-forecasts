@@ -8,7 +8,6 @@ require 'ndfd/client/query'
 # Original web service description: http://graphical.weather.gov/xml/
 module NDFD
   class Client
-    VERSION      = "1.0.0"
     DEFAULT_WSDL = "http://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl"
 
     def initialize(options = {})
