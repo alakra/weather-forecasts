@@ -9,7 +9,6 @@ Time.zone = 'UTC'
 require 'webmock/rspec'
 require 'vcr'
 require 'savon'
-require 'byebug'
 
 VCR.configure do |c|
   c.cassette_library_dir = 'spec/fixtures/vcr_cassettes'
