@@ -50,7 +50,7 @@ Ruby versions that will not be supported:
 Libraries used:
 
   * savon (for SOAP support)
-  * active_support (for TimeWithZone support)
+  * activesupport (for TimeWithZone support)
   * nokogiri (for XML/XSLT parsing)
   * http_logger (for controlling logging output from savon)
 
