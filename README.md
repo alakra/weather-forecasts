@@ -92,7 +92,14 @@ Ruby versions supported:
   * 2.1.0
   * 2.0.0
   * 1.9.3
-  * JRuby 1.7.x
+
+Ruby versions not supported (but will be):
+
+  * JRuby 1.7+
+
+Ruby versions that will not be supported:
+
+  * <= 1.9.2 (including REE)
 
 Libraries used:
 
