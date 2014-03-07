@@ -7,10 +7,8 @@ http_interactions:
       encoding: US-ASCII
       string: ''
     headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - "*/*"
+      - ! '*/*'
       User-Agent:
       - Ruby
   response:
@@ -29,12 +27,12 @@ http_interactions:
       Content-Type:
       - application/wsdl+xml
       Date:
-      - Thu, 06 Mar 2014 22:08:10 GMT
+      - Fri, 07 Mar 2014 00:10:23 GMT
       Connection:
       - keep-alive
     body:
-      encoding: UTF-8
-      string: "<?xml version=\"1.0\"?>\n\n<!--   **********************************************************************
+      encoding: US-ASCII
+      string: ! "<?xml version=\"1.0\"?>\n\n<!--   **********************************************************************
         \  \n                                                                           \n
         \      ndfdXML.wsdl   \n\n       John L. Schattel          MDL                4
         July 2007  \n       Aniesha L. Alford\n       Red Hat Linux                                Apache
@@ -379,26 +377,24 @@ http_interactions:
         \     <soap:address location=\"http://graphical.weather.gov/xml/SOAP_server/ndfdXMLserver.php\"/>\n
         \  </port>\n</service>\n\n</definitions>\n"
     http_version: 
-  recorded_at: Thu, 06 Mar 2014 22:08:10 GMT
+  recorded_at: Fri, 07 Mar 2014 00:10:23 GMT
 - request:
     method: post
     uri: http://graphical.weather.gov/xml/SOAP_server/ndfdXMLserver.php
     body:
-      encoding: UTF-8
+      encoding: US-ASCII
       string: <?xml version="1.0" encoding="UTF-8"?><env:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl"
         xmlns:env="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ins0="http://graphical.weather.gov/xml/DWMLgen/schema/DWML.xsd"><env:Body><tns:LatLonListSubgrid><lowerLeftLatitude>39.547101</lowerLeftLatitude><lowerLeftLongitude>-105.215759</lowerLeftLongitude><upperRightLatitude>39.991484</upperRightLatitude><upperRightLongitude>-104.704895</upperRightLongitude><resolution>2</resolution></tns:LatLonListSubgrid></env:Body></env:Envelope>
     headers:
       Soapaction:
-      - '"http://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl#LatLonListSubgrid"'
+      - ! '"http://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl#LatLonListSubgrid"'
       Content-Type:
       - text/xml;charset=UTF-8
       Content-Length:
       - '659'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - "*/*"
+      - ! '*/*'
       User-Agent:
       - Ruby
   response:
@@ -412,20 +408,18 @@ http_interactions:
       - NuSOAP/0.9.5 (1.123)
       Content-Type:
       - text/xml; charset=ISO-8859-1
-      Vary:
-      - Accept-Encoding
       Cache-Control:
       - max-age=180
       Expires:
-      - Thu, 06 Mar 2014 22:11:10 GMT
+      - Fri, 07 Mar 2014 00:13:24 GMT
       Date:
-      - Thu, 06 Mar 2014 22:08:10 GMT
+      - Fri, 07 Mar 2014 00:10:24 GMT
       Content-Length:
       - '3586'
       Connection:
       - keep-alive
     body:
-      encoding: UTF-8
+      encoding: US-ASCII
       string: <?xml version="1.0" encoding="ISO-8859-1"?><SOAP-ENV:Envelope SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
         xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"><SOAP-ENV:Body><ns1:LatLonListSubgridResponse
@@ -464,5 +458,5 @@ http_interactions:
         39.725028,-104.643652 39.769024,-104.647730 39.813010,-104.651812 39.856986,-104.655897
         39.900953,-104.659985 39.944910,-104.664077 39.988857,-104.668172 40.032794,-104.672271&lt;/latLonList&gt;&lt;/dwml&gt;</listLatLonOut></ns1:LatLonListSubgridResponse></SOAP-ENV:Body></SOAP-ENV:Envelope>
     http_version: 
-  recorded_at: Thu, 06 Mar 2014 22:08:10 GMT
+  recorded_at: Fri, 07 Mar 2014 00:10:24 GMT
 recorded_with: VCR 2.8.0

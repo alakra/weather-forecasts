@@ -8,7 +8,7 @@ module NDFD
       class << self
         def transform(raw_response)
           document = Nokogiri::XML(raw_response)
-          MultiJson.load( xslt.transform(document) )
+          MultiJson.load( xslt.transform(document).text )
         end
 
         def xslt

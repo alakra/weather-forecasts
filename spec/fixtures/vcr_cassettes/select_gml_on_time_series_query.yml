@@ -7,10 +7,8 @@ http_interactions:
       encoding: US-ASCII
       string: ''
     headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - "*/*"
+      - ! '*/*'
       User-Agent:
       - Ruby
   response:
@@ -29,12 +27,12 @@ http_interactions:
       Content-Type:
       - application/wsdl+xml
       Date:
-      - Thu, 06 Mar 2014 22:08:11 GMT
+      - Fri, 07 Mar 2014 00:10:17 GMT
       Connection:
       - keep-alive
     body:
-      encoding: UTF-8
-      string: "<?xml version=\"1.0\"?>\n\n<!--   **********************************************************************
+      encoding: US-ASCII
+      string: ! "<?xml version=\"1.0\"?>\n\n<!--   **********************************************************************
         \  \n                                                                           \n
         \      ndfdXML.wsdl   \n\n       John L. Schattel          MDL                4
         July 2007  \n       Aniesha L. Alford\n       Red Hat Linux                                Apache
@@ -379,26 +377,24 @@ http_interactions:
         \     <soap:address location=\"http://graphical.weather.gov/xml/SOAP_server/ndfdXMLserver.php\"/>\n
         \  </port>\n</service>\n\n</definitions>\n"
     http_version: 
-  recorded_at: Thu, 06 Mar 2014 22:08:11 GMT
+  recorded_at: Fri, 07 Mar 2014 00:10:17 GMT
 - request:
     method: post
     uri: http://graphical.weather.gov/xml/SOAP_server/ndfdXMLserver.php
     body:
-      encoding: UTF-8
+      encoding: US-ASCII
       string: <?xml version="1.0" encoding="UTF-8"?><env:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl"
-        xmlns:env="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ins0="http://graphical.weather.gov/xml/DWMLgen/schema/DWML.xsd"><env:Body><tns:GmlTimeSeries><listLatLon>38.99,-77.01</listLatLon><startTime>2014-03-07T22:08:11Z</startTime><endTime>2014-03-11T22:08:11Z</endTime><compType>Between</compType><featureType>NdfdMultiPointCoverage</featureType><propertyName>maxt</propertyName></tns:GmlTimeSeries></env:Body></env:Envelope>
+        xmlns:env="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ins0="http://graphical.weather.gov/xml/DWMLgen/schema/DWML.xsd"><env:Body><tns:GmlTimeSeries><listLatLon>38.99,-77.01</listLatLon><startTime>2014-03-08T00:10:17Z</startTime><endTime>2014-03-12T00:10:17Z</endTime><compType>Between</compType><featureType>NdfdMultiPointCoverage</featureType><propertyName>maxt</propertyName></tns:GmlTimeSeries></env:Body></env:Envelope>
     headers:
       Soapaction:
-      - '"http://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl#GmlTimeSeries"'
+      - ! '"http://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl#GmlTimeSeries"'
       Content-Type:
       - text/xml;charset=UTF-8
       Content-Length:
       - '650'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - "*/*"
+      - ! '*/*'
       User-Agent:
       - Ruby
   response:
@@ -412,23 +408,22 @@ http_interactions:
       - NuSOAP/0.9.5 (1.123)
       Content-Type:
       - text/xml; charset=ISO-8859-1
-      Vary:
-      - Accept-Encoding
       Cache-Control:
-      - max-age=165
+      - max-age=180
       Expires:
-      - Thu, 06 Mar 2014 22:10:57 GMT
+      - Fri, 07 Mar 2014 00:13:18 GMT
       Date:
-      - Thu, 06 Mar 2014 22:08:12 GMT
+      - Fri, 07 Mar 2014 00:10:18 GMT
       Content-Length:
       - '4670'
       Connection:
       - keep-alive
     body:
-      encoding: UTF-8
-      string: "<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?><SOAP-ENV:Envelope SOAP-ENV:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\"
-        xmlns:SOAP-ENV=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\"
-        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:SOAP-ENC=\"http://schemas.xmlsoap.org/soap/encoding/\"><SOAP-ENV:Body><ns1:GmlTimeSeriesResponse
+      encoding: US-ASCII
+      string: ! "<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?><SOAP-ENV:Envelope
+        SOAP-ENV:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xmlns:SOAP-ENV=\"http://schemas.xmlsoap.org/soap/envelope/\"
+        xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"
+        xmlns:SOAP-ENC=\"http://schemas.xmlsoap.org/soap/encoding/\"><SOAP-ENV:Body><ns1:GmlTimeSeriesResponse
         xmlns:ns1=\"http://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl\"><dwGmlOut
         xsi:type=\"xsd:string\">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;\n&lt;app:NdfdForecastCollection
         \nxmlns=&quot;http://www.weather.gov/forecasts/xml/OGC_services&quot; \nxmlns:app=&quot;http://www.weather.gov/forecasts/xml/OGC_services&quot;
@@ -442,14 +437,6 @@ http_interactions:
         \              &lt;gml:Point srsName=&quot;EPSG:4326&quot;&gt;\n                 &lt;gml:pos&gt;38.99
         -77.01&lt;/gml:pos&gt;\n               &lt;/gml:Point&gt; \n               &lt;/gml:pointMembers&gt;\n
         \           &lt;/gml:MultiPoint&gt;\n         &lt;/gml:multiPointDomain&gt;\n
-        \        &lt;gml:rangeSet&gt;\n            &lt;app:MaximumTemperature uom=&quot;Fahrenheit&quot;&gt;38.0&lt;/app:MaximumTemperature&gt;\n
-        \        &lt;/gml:rangeSet&gt;\n         &lt;app:validTime&gt;2014-03-08T00:00:00&lt;/app:validTime&gt;\n
-        \     &lt;/app:NdfdMultiPointCoverage&gt;\n   &lt;/app:featureMember&gt;\n\n
-        \  &lt;app:featureMember&gt;\n      &lt;app:NdfdMultiPointCoverage&gt;\n         &lt;gml:multiPointDomain&gt;\n
-        \           &lt;gml:MultiPoint&gt;\n               &lt;gml:pointMembers&gt;\n
-        \              &lt;gml:Point srsName=&quot;EPSG:4326&quot;&gt;\n                 &lt;gml:pos&gt;38.99
-        -77.01&lt;/gml:pos&gt;\n               &lt;/gml:Point&gt; \n               &lt;/gml:pointMembers&gt;\n
-        \           &lt;/gml:MultiPoint&gt;\n         &lt;/gml:multiPointDomain&gt;\n
         \        &lt;gml:rangeSet&gt;\n            &lt;app:MaximumTemperature uom=&quot;Fahrenheit&quot;&gt;56.0&lt;/app:MaximumTemperature&gt;\n
         \        &lt;/gml:rangeSet&gt;\n         &lt;app:validTime&gt;2014-03-09T00:00:00&lt;/app:validTime&gt;\n
         \     &lt;/app:NdfdMultiPointCoverage&gt;\n   &lt;/app:featureMember&gt;\n\n
@@ -458,7 +445,7 @@ http_interactions:
         \              &lt;gml:Point srsName=&quot;EPSG:4326&quot;&gt;\n                 &lt;gml:pos&gt;38.99
         -77.01&lt;/gml:pos&gt;\n               &lt;/gml:Point&gt; \n               &lt;/gml:pointMembers&gt;\n
         \           &lt;/gml:MultiPoint&gt;\n         &lt;/gml:multiPointDomain&gt;\n
-        \        &lt;gml:rangeSet&gt;\n            &lt;app:MaximumTemperature uom=&quot;Fahrenheit&quot;&gt;48.0&lt;/app:MaximumTemperature&gt;\n
+        \        &lt;gml:rangeSet&gt;\n            &lt;app:MaximumTemperature uom=&quot;Fahrenheit&quot;&gt;49.0&lt;/app:MaximumTemperature&gt;\n
         \        &lt;/gml:rangeSet&gt;\n         &lt;app:validTime&gt;2014-03-10T00:00:00&lt;/app:validTime&gt;\n
         \     &lt;/app:NdfdMultiPointCoverage&gt;\n   &lt;/app:featureMember&gt;\n\n
         \  &lt;app:featureMember&gt;\n      &lt;app:NdfdMultiPointCoverage&gt;\n         &lt;gml:multiPointDomain&gt;\n
@@ -468,7 +455,15 @@ http_interactions:
         \           &lt;/gml:MultiPoint&gt;\n         &lt;/gml:multiPointDomain&gt;\n
         \        &lt;gml:rangeSet&gt;\n            &lt;app:MaximumTemperature uom=&quot;Fahrenheit&quot;&gt;59.0&lt;/app:MaximumTemperature&gt;\n
         \        &lt;/gml:rangeSet&gt;\n         &lt;app:validTime&gt;2014-03-11T00:00:00&lt;/app:validTime&gt;\n
+        \     &lt;/app:NdfdMultiPointCoverage&gt;\n   &lt;/app:featureMember&gt;\n\n
+        \  &lt;app:featureMember&gt;\n      &lt;app:NdfdMultiPointCoverage&gt;\n         &lt;gml:multiPointDomain&gt;\n
+        \           &lt;gml:MultiPoint&gt;\n               &lt;gml:pointMembers&gt;\n
+        \              &lt;gml:Point srsName=&quot;EPSG:4326&quot;&gt;\n                 &lt;gml:pos&gt;38.99
+        -77.01&lt;/gml:pos&gt;\n               &lt;/gml:Point&gt; \n               &lt;/gml:pointMembers&gt;\n
+        \           &lt;/gml:MultiPoint&gt;\n         &lt;/gml:multiPointDomain&gt;\n
+        \        &lt;gml:rangeSet&gt;\n            &lt;app:MaximumTemperature uom=&quot;Fahrenheit&quot;&gt;62.0&lt;/app:MaximumTemperature&gt;\n
+        \        &lt;/gml:rangeSet&gt;\n         &lt;app:validTime&gt;2014-03-12T00:00:00&lt;/app:validTime&gt;\n
         \     &lt;/app:NdfdMultiPointCoverage&gt;\n   &lt;/app:featureMember&gt;\n\n&lt;/app:NdfdForecastCollection&gt;\n</dwGmlOut></ns1:GmlTimeSeriesResponse></SOAP-ENV:Body></SOAP-ENV:Envelope>"
     http_version: 
-  recorded_at: Thu, 06 Mar 2014 22:08:12 GMT
+  recorded_at: Fri, 07 Mar 2014 00:10:18 GMT
 recorded_with: VCR 2.8.0

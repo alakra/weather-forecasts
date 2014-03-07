@@ -86,7 +86,16 @@ Other features:
 
 ## Runtime Dependencies
 
-    * savonrb
+Ruby versions supported:
+
+  * 2.1.0
+  * 2.0.0
+  * 1.9.3
+  * JRuby 1.7.x
+
+Libraries used:
+
+  * savonrb
 
 ## Installation
 

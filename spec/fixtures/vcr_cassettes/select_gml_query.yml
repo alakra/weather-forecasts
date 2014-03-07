@@ -7,10 +7,8 @@ http_interactions:
       encoding: US-ASCII
       string: ''
     headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - "*/*"
+      - ! '*/*'
       User-Agent:
       - Ruby
   response:
@@ -29,12 +27,12 @@ http_interactions:
       Content-Type:
       - application/wsdl+xml
       Date:
-      - Thu, 06 Mar 2014 22:08:13 GMT
+      - Fri, 07 Mar 2014 00:10:18 GMT
       Connection:
       - keep-alive
     body:
-      encoding: UTF-8
-      string: "<?xml version=\"1.0\"?>\n\n<!--   **********************************************************************
+      encoding: US-ASCII
+      string: ! "<?xml version=\"1.0\"?>\n\n<!--   **********************************************************************
         \  \n                                                                           \n
         \      ndfdXML.wsdl   \n\n       John L. Schattel          MDL                4
         July 2007  \n       Aniesha L. Alford\n       Red Hat Linux                                Apache
@@ -379,26 +377,24 @@ http_interactions:
         \     <soap:address location=\"http://graphical.weather.gov/xml/SOAP_server/ndfdXMLserver.php\"/>\n
         \  </port>\n</service>\n\n</definitions>\n"
     http_version: 
-  recorded_at: Thu, 06 Mar 2014 22:08:13 GMT
+  recorded_at: Fri, 07 Mar 2014 00:10:19 GMT
 - request:
     method: post
     uri: http://graphical.weather.gov/xml/SOAP_server/ndfdXMLserver.php
     body:
-      encoding: UTF-8
+      encoding: US-ASCII
       string: <?xml version="1.0" encoding="UTF-8"?><env:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl"
-        xmlns:env="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ins0="http://graphical.weather.gov/xml/DWMLgen/schema/DWML.xsd"><env:Body><tns:GmlLatLonList><listLatLon>38.99,-77.01</listLatLon><requestedTime>2014-03-07T22:08:13Z</requestedTime><featureType>NdfdMultiPointCoverage</featureType><weatherParameters><maxt>1</maxt><mint>0</mint><temp>0</temp><dew>0</dew><appt>0</appt><pop12>0</pop12><qpf>0</qpf><snow>0</snow><sky>0</sky><rh>0</rh><wspd>0</wspd><wdir>0</wdir><wx>0</wx><icons>0</icons><waveh>0</waveh><incw34>0</incw34><incw50>0</incw50><incw64>0</incw64><cumw34>0</cumw34><cumw50>0</cumw50><cumw64>0</cumw64><wgust>0</wgust><critfireo>0</critfireo><dryfireo>0</dryfireo><conhazo>0</conhazo><ptornado>0</ptornado><phail>0</phail><ptstmwinds>0</ptstmwinds><pxtornado>0</pxtornado><pxhail>0</pxhail><pxtstmwinds>0</pxtstmwinds><ptotsvrtstm>0</ptotsvrtstm><pxtotsvrtstm>0</pxtotsvrtstm><tmpabv14d>0</tmpabv14d><tmpblw14d>0</tmpblw14d><tmpabv30d>0</tmpabv30d><tmpblw30d>0</tmpblw30d><tmpabv90d>0</tmpabv90d><tmpblw90d>0</tmpblw90d><prcpabv14d>0</prcpabv14d><prcpblw14d>0</prcpblw14d><prcpabv30d>0</prcpabv30d><prcpblw30d>0</prcpblw30d><prcpabv90d>0</prcpabv90d><prcpblw90d>0</prcpblw90d><precipaR>0</precipaR><skyR>0</skyR><tdR>0</tdR><tempR>0</tempR><wdirR>0</wdirR><wspdR>0</wspdR><wwa>0</wwa><iceaccum>0</iceaccum><maxrh>0</maxrh><minrh>0</minrh></weatherParameters></tns:GmlLatLonList></env:Body></env:Envelope>
+        xmlns:env="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ins0="http://graphical.weather.gov/xml/DWMLgen/schema/DWML.xsd"><env:Body><tns:GmlLatLonList><listLatLon>38.99,-77.01</listLatLon><requestedTime>2014-03-08T00:10:18Z</requestedTime><featureType>NdfdMultiPointCoverage</featureType><weatherParameters><maxt>1</maxt><mint>0</mint><temp>0</temp><dew>0</dew><appt>0</appt><pop12>0</pop12><qpf>0</qpf><snow>0</snow><sky>0</sky><rh>0</rh><wspd>0</wspd><wdir>0</wdir><wx>0</wx><icons>0</icons><waveh>0</waveh><incw34>0</incw34><incw50>0</incw50><incw64>0</incw64><cumw34>0</cumw34><cumw50>0</cumw50><cumw64>0</cumw64><wgust>0</wgust><critfireo>0</critfireo><dryfireo>0</dryfireo><conhazo>0</conhazo><ptornado>0</ptornado><phail>0</phail><ptstmwinds>0</ptstmwinds><pxtornado>0</pxtornado><pxhail>0</pxhail><pxtstmwinds>0</pxtstmwinds><ptotsvrtstm>0</ptotsvrtstm><pxtotsvrtstm>0</pxtotsvrtstm><tmpabv14d>0</tmpabv14d><tmpblw14d>0</tmpblw14d><tmpabv30d>0</tmpabv30d><tmpblw30d>0</tmpblw30d><tmpabv90d>0</tmpabv90d><tmpblw90d>0</tmpblw90d><prcpabv14d>0</prcpabv14d><prcpblw14d>0</prcpblw14d><prcpabv30d>0</prcpabv30d><prcpblw30d>0</prcpblw30d><prcpabv90d>0</prcpabv90d><prcpblw90d>0</prcpblw90d><precipaR>0</precipaR><skyR>0</skyR><tdR>0</tdR><tempR>0</tempR><wdirR>0</wdirR><wspdR>0</wspdR><wwa>0</wwa><iceaccum>0</iceaccum><maxrh>0</maxrh><minrh>0</minrh></weatherParameters></tns:GmlLatLonList></env:Body></env:Envelope>
     headers:
       Soapaction:
-      - '"http://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl#GmlLatLonList"'
+      - ! '"http://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl#GmlLatLonList"'
       Content-Type:
       - text/xml;charset=UTF-8
       Content-Length:
       - '1643'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - "*/*"
+      - ! '*/*'
       User-Agent:
       - Ruby
   response:
@@ -412,23 +408,22 @@ http_interactions:
       - NuSOAP/0.9.5 (1.123)
       Content-Type:
       - text/xml; charset=ISO-8859-1
-      Vary:
-      - Accept-Encoding
       Cache-Control:
-      - max-age=168
+      - max-age=178
       Expires:
-      - Thu, 06 Mar 2014 22:11:01 GMT
+      - Fri, 07 Mar 2014 00:13:20 GMT
       Date:
-      - Thu, 06 Mar 2014 22:08:13 GMT
+      - Fri, 07 Mar 2014 00:10:22 GMT
       Content-Length:
       - '2364'
       Connection:
       - keep-alive
     body:
-      encoding: UTF-8
-      string: "<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?><SOAP-ENV:Envelope SOAP-ENV:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\"
-        xmlns:SOAP-ENV=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\"
-        xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:SOAP-ENC=\"http://schemas.xmlsoap.org/soap/encoding/\"><SOAP-ENV:Body><ns1:GmlLatLonListResponse
+      encoding: US-ASCII
+      string: ! "<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?><SOAP-ENV:Envelope
+        SOAP-ENV:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xmlns:SOAP-ENV=\"http://schemas.xmlsoap.org/soap/envelope/\"
+        xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"
+        xmlns:SOAP-ENC=\"http://schemas.xmlsoap.org/soap/encoding/\"><SOAP-ENV:Body><ns1:GmlLatLonListResponse
         xmlns:ns1=\"http://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl\"><dwGmlOut
         xsi:type=\"xsd:string\">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;\n&lt;app:NdfdForecastCollection
         \nxmlns=&quot;http://www.weather.gov/forecasts/xml/OGC_services&quot; \nxmlns:app=&quot;http://www.weather.gov/forecasts/xml/OGC_services&quot;
@@ -442,9 +437,9 @@ http_interactions:
         \              &lt;gml:Point srsName=&quot;EPSG:4326&quot;&gt;\n                 &lt;gml:pos&gt;38.99
         -77.01&lt;/gml:pos&gt;\n               &lt;/gml:Point&gt; \n               &lt;/gml:pointMembers&gt;\n
         \           &lt;/gml:MultiPoint&gt;\n         &lt;/gml:multiPointDomain&gt;\n
-        \        &lt;gml:rangeSet&gt;\n            &lt;app:MaximumTemperature uom=&quot;Fahrenheit&quot;&gt;38.0&lt;/app:MaximumTemperature&gt;\n
-        \        &lt;/gml:rangeSet&gt;\n         &lt;app:validTime&gt;2014-03-07T22:08:13Z&lt;/app:validTime&gt;\n
+        \        &lt;gml:rangeSet&gt;\n            &lt;app:MaximumTemperature uom=&quot;Fahrenheit&quot;&gt;56.0&lt;/app:MaximumTemperature&gt;\n
+        \        &lt;/gml:rangeSet&gt;\n         &lt;app:validTime&gt;2014-03-08T00:10:18Z&lt;/app:validTime&gt;\n
         \     &lt;/app:NdfdMultiPointCoverage&gt;\n   &lt;/app:featureMember&gt;\n\n&lt;/app:NdfdForecastCollection&gt;\n</dwGmlOut></ns1:GmlLatLonListResponse></SOAP-ENV:Body></SOAP-ENV:Envelope>"
     http_version: 
-  recorded_at: Thu, 06 Mar 2014 22:08:13 GMT
+  recorded_at: Fri, 07 Mar 2014 00:10:22 GMT
 recorded_with: VCR 2.8.0
