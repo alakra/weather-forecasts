@@ -71,7 +71,7 @@ Most calls follow the form of:
           where(conditions).
           execute
 
-This will return an Array, Hash or Nokogiri::XML::Document containing
+This will return an `Array`, `Hash` or `Nokogiri::XML::Document` containing
 the data from the response depending on the type of the request.
 
 **NOTE**: Dates and times passed to the `where` must be
@@ -140,6 +140,8 @@ using the equivalent collection-based functions.
 
 To see a description of the NDFD Spatial Reference System (used for collecting lat/longs in an area)
 http://graphical.weather.gov/docs/ndfdSRS.htm
+
+To see more detailed documention, view the [API Documentation](http://rdoc.info/github/alakra/ndfd-weather-forecast-client/frames)
 
 ## Special Thanks
 
