@@ -86,11 +86,60 @@ There are 8 API calls that can be made to NDFD:
     <th>Description</th>
   </tr>
   <tr>
-    <td>`select`</td>
-    <td>`NDFDgenLatLonList()`</td>
-    <td>Returns a `Hash` of forecast metrics for multiple latitudes/longitudes.</td>
+    <td><code>select</code></td>
+    <td><code>NDFDgenLatLonList</code></td>
+    <td>Returns a <code>Hash</code> of forecast metrics for multiple latitudes/longitudes.</td>
+  </tr>
+  <tr>
+    <td><code>select_gml</code></td>
+    <td><code>GmlLatLonList</code></td>
+    <td>Returns a <code>Nokogiri::XML::Document</code> of forecast metrics in GML format for multiple latitudes/longitudes.</td>
+  </tr>
+  <tr>
+    <td><code>select_gml_on_time_series</code></td>
+    <td><code>GmlTimeSeries</code></td>
+    <td>Returns a <code>Nokogiri::XML::Document</code> of forecast metrics in GML format for multiple latitudes/longitudes over a specific time period.</td>
+  </tr>
+  <tr>
+    <td><code>select_by_days</code></td>
+    <td><code>NDFDgenByDayLatLonList</code></td>
+    <td>Returns a <code>Hash</code> of forecast metrics for multiple latitudes/longitudes in a 24/12 hour period for a number of days.</td>
+  </tr>
+  <tr>
+    <td><code>select_coordinates_by_zip</code></td>
+    <td><code>LatLonListZipCode</code></td>
+    <td>Returns a <code>Hash</code> of latitudes/longitudes for every zip code requested.</td>
+  </tr>
+  <tr>
+    <td><code>select_coordinates_by_cities</code></td>
+    <td><code>LatLonListCityNames</code></td>
+    <td>Returns a <code>Hash</code> of latitudes/longitudes for a pre-defined set of cities.</td>
+  </tr>
+  <tr>
+    <td><code>select_square_coordinates</code></td>
+    <td><code>LatLonListSquare</code></td>
+    <td>Returns a <code>Array</code> of latitudes/longitudes for the requested rectangular area.</td>
+  </tr>
+  <tr>
+    <td><code>select_gridpoint_coordinates</code></td>
+    <td><code>LatLonListSubgrid</code></td>
+    <td>Returns a <code>Array</code> of latitudes/longitudes for the requested subgrid.</td>
+  </tr>
+  <tr>
+    <td><code>select_linepoint_coordinates</code></td>
+    <td><code>LatLonListLine</code></td>
+    <td>Returns a <code>Array</code> of latitudes/longitudes between a start and end coordinate.</td>
+  </tr>
+  <tr>
+    <td><code>select_corner_coordinates</code></td>
+    <td><code>CornerPoints</code></td>
+    <td>Returns a <code>Array</code> of latitudes/longitudes of the corners of one of the NDFD grids.</td>
   </tr>
 </table>
 
 To see a description of the NDFD Spatial Reference System (used for collecting lat/longs in an area)
 http://graphical.weather.gov/docs/ndfdSRS.htm
+
+## Special Thanks
+
+  * To [greencoder](https://github.com/greencoder) for [noaa-dwml-to-json-xslt](https://github.com/greencoder/noaa-dwml-to-json-xslt)
