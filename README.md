@@ -56,7 +56,7 @@ Libraries used:
 
 ## Installation
 
-    gem install ndfd-forecast-weather-client
+    gem install ndfd-weather-forecast-client
 
 ## Usage
 
