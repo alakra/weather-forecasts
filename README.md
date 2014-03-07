@@ -74,10 +74,11 @@ Most calls follow the form of:
 This will return an Array, Hash or Nokogiri::XML::Document containing
 the data from the response depending on the type of the request.
 
-NOTE: Dates and times passed to the `where` must be
+**NOTE**: Dates and times passed to the `where` must be
 ActiveSupport::TimeWithZone objects.
 
-There are 8 API calls that can be made to NDFD:
+**NOTE**: `NDFDgen` and `NDFDgenByDay` are not implemented in favor of
+using the equivalent collection-based functions.
 
 <table>
   <tr>
