@@ -4,6 +4,7 @@
 [![Build Status](https://travis-ci.org/alakra/ndfd-weather-forecast-client.png?branch=master)](https://travis-ci.org/alakra/ndfd-weather-forecast-client)
 [![Code Climate](https://codeclimate.com/github/alakra/ndfd-weather-forecast-client.png)](https://codeclimate.com/github/alakra/ndfd-weather-forecast-client)
 [![Dependency Status](https://gemnasium.com/alakra/ndfd-weather-forecast-client.png)](https://gemnasium.com/alakra/ndfd-weather-forecast-client)
+[![Coverage Status](https://coveralls.io/repos/alakra/ndfd-weather-forecast-client/badge.png)](https://coveralls.io/r/alakra/ndfd-weather-forecast-client)
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/alakra/ndfd-weather-forecast-client/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
 ## Summary
