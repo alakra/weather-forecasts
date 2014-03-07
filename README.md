@@ -96,6 +96,7 @@ Ruby versions supported:
 Ruby versions not supported (but will be):
 
   * JRuby 1.7+
+  * Rubinius 2.2+
 
 Ruby versions that will not be supported:
 
@@ -107,7 +108,7 @@ Libraries used:
 
 ## Installation
 
-    gem install ndfd-client
+    gem install ndfd-forecast-weather-client
 
 ## Usage
 
