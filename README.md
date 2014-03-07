@@ -4,6 +4,7 @@
 [![Build Status](https://travis-ci.org/alakra/ndfd-weather-forecast-client.png?branch=master)](https://travis-ci.org/alakra/ndfd-weather-forecast-client)
 [![Code Climate](https://codeclimate.com/github/alakra/ndfd-weather-forecast-client.png)](https://codeclimate.com/github/alakra/ndfd-weather-forecast-client)
 [![Dependency Status](https://gemnasium.com/alakra/ndfd-weather-forecast-client.png)](https://gemnasium.com/alakra/ndfd-weather-forecast-client)
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/alakra/ndfd-weather-forecast-client/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
 ## Summary
 
@@ -154,7 +155,3 @@ There are 8 API calls that can be made to NDFD:
 
 To see a description of the NDFD Spatial Reference System (used for collecting lat/longs in an area)
 http://graphical.weather.gov/docs/ndfdSRS.htm
-
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/alakra/ndfd-weather-forecast-client/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
