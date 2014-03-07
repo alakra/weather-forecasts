@@ -14,73 +14,18 @@ for access to weather forecast information via Ruby.
 
 ## NDFD Features
 
-It's not apparent what the NDFD API gives you unless you delve into
-their API docs so here is a quick rundown of what weather metrics you
-can get out of it:
+You can [see the available forecast information](http://www.nws.noaa.gov/ndfd/technical.htm#elements) that is accessible via the API on the NDFD technical description page.
 
-  * 3-hour interval current temperature forecasts
-  * Max. Temperature
-  * Min. Temperature
-  * Dewpoint Temperature
-  * Apparent Temperature
-  * 12 Hour Probability of Precipitation
-  * Liquid Precipitation Amount
-  * Snowfall Amount
-  * Cloud Cover Amount
-  * Relative Humidity
-  * Wind Speed
-  * Wind Direction
-  * Weather
-  * Weather Icons
-  * Wave Height
-  * Probabilistic Tropical Cyclone Wind Speed >34 Knots (Incremental)
-  * Probabilistic Tropical Cyclone Wind Speed >50 Knots (Incremental)
-  * Probabilistic Tropical Cyclone Wind Speed >64 Knots (Incremental)
-  * Probabilistic Tropical Cyclone Wind Speed >34 Knots (Cumulative)
-  * Probabilistic Tropical Cyclone Wind Speed >50 Knots (Cumulative)
-  * Probabilistic Tropical Cyclone Wind Speed >64 Knots (Cumulative)
-  * Wind Gust
-  * Fire Weather from Wind and Relative Humidity
-  * Fire Weather from Dry Thunderstorms
-  * Convective Hazard Outlook
-  * Probability of Tornadoes
-  * Probability of Hail
-  * Probability of Damaging Thunderstorm Winds
-  * Probability of Extreme Tornadoes
-  * Probability of Extreme Hail
-  * Probability of Extreme Thunderstorm Winds
-  * Probability of Severe Thunderstorms
-  * Probability of Extreme Severe Thunderstorms
-  * Probability of 8- To 14-Day Average Temperature Above Normal
-  * Probability of 8- To 14-Day Average Temperature Below Normal
-  * Probability of One-Month Average Temperature Above Normal
-  * Probability of One-Month Average Temperature Below Normal
-  * Probability of Three-Month Average Temperature Above Normal
-  * Probability of Three-Month Average Temperature Below Normal
-  * Probability of 8- To 14-Day Total Precipitation Above Median
-  * Probability of 8- To 14-Day Total Precipitation Below Median
-  * Probability of One-Month Total Precipitation Above Median
-  * Probability of One-Month Total Precipitation Below Median
-  * Probability of Three-Month Total Precipitation Above Median
-  * Probability of Three-Month Total Precipitation Below Median
-  * Real-time Mesoscale Analysis Precipitation
-  * Real-time Mesoscale Analysis GOES Effective Cloud Amount
-  * Real-time Mesoscale Analysis Dewpoint Temperature
-  * Real-time Mesoscale Analysis Temperature
-  * Real-time Mesoscale Analysis Wind Direction
-  * Real-time Mesoscale Analysis Wind Speed
-  * Watches, Warnings, and Advisories
-  * Ice Accumulation
-  * Maximum Relative Humidity
-  * Minimum Relative Humidity
+In general, you can get the following:
 
-Forecast information is only up to ~7 days in the future in most cases.
-
-See the usage section for details on each specifc method.
+  * Specific forecast dimensions (min/max temperature, wind speed, etc.) out to 168 hours.
+  * Climate outlook probabilities (estimated averages/totals of temperature and precipitation)
+  * Convective Outlook Hazard Probabilities (hazard outlook, tornadoes, etc.)
+  * Probabilistic Tropical Cyclone Surface Wind Speed (measured in knots)
 
 ## Client Features
 
-The client offers a easy to use query interface and will hand back data to you as Ruby objects.
+The client offers a easy to use query interface and will hand back data to you in hashes, arrays and XML documents.
 
 Other features:
 
@@ -91,8 +36,8 @@ Other features:
 
 Ruby versions supported:
 
-  * 2.1.0
-  * 2.0.0
+  * 2.1.x
+  * 2.0.x
   * 1.9.3
 
 Ruby versions not supported (but will be):
@@ -106,7 +51,10 @@ Ruby versions that will not be supported:
 
 Libraries used:
 
-  * savonrb
+  * savon (for SOAP support)
+  * active_support (for TimeWithZone support)
+  * nokogiri (for XML/XSLT parsing)
+  * http_logger (for controlling logging output from savon)
 
 ## Installation
 
@@ -114,44 +62,34 @@ Libraries used:
 
 ## Usage
 
-`NDFD.client` is the top-level client object from whence all API calls are executed.
+`NDFD.client` is the top-level start point from whence all API calls are executed.
 
 Most calls follow the form of:
 
     NDFD.client.
-          select(:maxt, :mint, :temp).
-          where().
+          select(:maxt, :mint, :temp, etc.).
+          where(conditions).
           execute
 
-This will return a `NDFD::Response` object where the raw xml and a
-hash of the selected attributes of interested are stored.
+This will return an Array, Hash or Nokogiri::XML::Document containing
+the data from the response depending on the type of the request.
 
-The hash in the previous query is structured like this:
-
-    [
-      { maxt: 82, mint: 67, temp: 77, timestamp: '2014-02-28T00:00:00' },
-      { maxt: 82, mint: 67, temp: 77, timestamp: '2014-02-28T03:00:00' },
-      { maxt: 82, mint: 67, temp: 77, timestamp: '2014-02-28T06:00:00' }
-      etc...
-    ]
-
-NOTE: `timestamp` are actually ActiveSupport::TimeWithZone objects
+NOTE: Dates and times passed to the `where` must be
+ActiveSupport::TimeWithZone objects.
 
 There are 8 API calls that can be made to NDFD:
 
 <table>
-    <tr>
-        <th>Query Method</th>
-        <th>Selectable Attributes</th>
-        <th>Valid Options</th>
-        <th>Default Value</th>
-        <th>Required</th>
-        <th>Required Keys</th>
-        <th>Example</th>
-    </tr>
-    <tr class="query-method-definitions">
-
-    </tr>
+  <tr>
+    <th>Query Method</th>
+    <th>API server function</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>`select`</td>
+    <td>`NDFDgenLatLonList()`</td>
+    <td>Returns a `Hash` of forecast metrics for multiple latitudes/longitudes.</td>
+  </tr>
 </table>
 
 To see a description of the NDFD Spatial Reference System (used for collecting lat/longs in an area)
