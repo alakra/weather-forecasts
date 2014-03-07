@@ -26,11 +26,7 @@ In general, you can get the following:
 ## Client Features
 
 The client offers a easy to use query interface and will hand back data to you in hashes, arrays and XML documents.
-
-Other features:
-
-  * Validates requests and data types on execution of requests (will
-    raise contextual errors on poorly formed data in queries)
+Validates requests and data types on execution of requests (will raise contextual errors on poorly formed data in queries)
 
 ## Runtime Dependencies
 
