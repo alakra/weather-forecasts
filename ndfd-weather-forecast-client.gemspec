@@ -10,9 +10,10 @@ Gem::Specification.new do |s|
   s.authors = ["Angelo Lakra"]
   s.email = ["angelo.lakra@gmail.com"]
   s.summary = "Client library for retrieving data from NOAA's weather forecast API"
-  s.description = "Client library for retrieving data from NOAA's weather forecast API}"
+  s.description = "Client library for retrieving data from NOAA's weather forecast API"
   s.homepage = "https://github.com/alakra/ndfd-weather-forecast-client"
   s.bindir = 'bin'
+  s.licenses = ['MIT']
 
   s.extra_rdoc_files = ['README.md']
 
