@@ -51,7 +51,7 @@ describe NDFD::Client::Query do
     context "for selection attributes" do
       context "with valid selection attributes" do
         it "validates that the selection attributes are appropriately set" do
-          instance = subclass.new(soap_client, :thing1, :thing2)
+          instance = subclass.new(soap_client, [:thing1, :thing2])
           instance.where(conditions_with_defaults)
 
           expect { instance.validate }.not_to raise_error
@@ -60,7 +60,7 @@ describe NDFD::Client::Query do
 
       context "with invalid selection attributes" do
         it "raises an error" do
-          instance = subclass.new(soap_client, :thing1, :thing2, :thing3)
+          instance = subclass.new(soap_client, [:thing1, :thing2, :thing3])
           instance.where(conditions_with_defaults)
 
           expect { instance.validate }.to raise_error(NDFD::Client::InvalidSelectionAttributeError)

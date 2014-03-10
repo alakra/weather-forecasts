@@ -71,7 +71,7 @@ module NDFD
 
       attr_reader :soap_client, :select_attributes, :conditions
 
-      def initialize(soap_client, *select_attributes)
+      def initialize(soap_client, select_attributes = [])
         @soap_client = soap_client
         @select_attributes = select_attributes
         @conditions = {}

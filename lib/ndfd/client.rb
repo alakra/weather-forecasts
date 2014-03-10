@@ -30,15 +30,15 @@ module NDFD
     # Query Methods
     ############################################################################
 
-    def select(options)
+    def select(*options)
       NDFD::Client::SelectQuery.new(soap_client, options)
     end
 
-    def select_gml(options)
+    def select_gml(*options)
       NDFD::Client::SelectGmlQuery.new(soap_client, options)
     end
 
-    def select_gml_on_time_series(options)
+    def select_gml_on_time_series(*options)
       NDFD::Client::SelectGmlOnTimeSeriesQuery.new(soap_client, options)
     end
 
