@@ -80,13 +80,7 @@ using the equivalent collection-based functions.
 
 **NOTE**: `GmlLatLonList`, `GmlTimeSeries` are not implemented because
 of their limited use (and my inability to figure out what parameters
-to use to make a valid request).  It appears that the GML portions of
-the web service are not fully functional.
-
-See [http://www.nws.noaa.gov/mdl/survey/pgb_survey/dev/OGC_services/](http://www.nws.noaa.gov/mdl/survey/pgb_survey/dev/OGC_services/) as it was used primarily for serving GML-based data.
-It is now [http://www.nws.noaa.gov/om/notification/tin10-59ending_wfs.htm](discontinued).
-
-Also [http://www.nws.noaa.gov/mdl/survey/pgb_survey/dev/OGC_services/](http://www.nws.noaa.gov/mdl/survey/pgb_survey/dev/OGC_services/)
+to use to make a valid request).  It appears they may be [discontinued](http://www.nws.noaa.gov/om/notification/tin10-59ending_wfs.htm).
 
 <table>
   <tr>
