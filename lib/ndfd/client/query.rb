@@ -3,7 +3,6 @@ require 'active_support/time_with_zone'
 
 Time.zone ||= "UTC"
 
-require 'ndfd/client/response'
 require 'ndfd/client/query/query_property'
 require 'ndfd/client/query/selection_attributes'
 require 'ndfd/client/query/query_utilities'
@@ -146,8 +145,6 @@ module NDFD
   end
 end
 
-require 'ndfd/client/query/select_gml_query'
-require 'ndfd/client/query/select_gml_on_time_series_query'
 require 'ndfd/client/query/select_by_days_query'
 require 'ndfd/client/query/select_coordinates_by_cities_query'
 require 'ndfd/client/query/select_coordinates_by_zip_query'

@@ -78,6 +78,16 @@ ActiveSupport::TimeWithZone objects.
 **NOTE**: `NDFDgen` and `NDFDgenByDay` are not implemented in favor of
 using the equivalent collection-based functions.
 
+**NOTE**: `GmlLatLonList`, `GmlTimeSeries` are not implemented because
+of their limited use (and my inability to figure out what parameters
+to use to make a valid request).  It appears that the GML portions of
+the web service are not fully functional.
+
+See [http://www.nws.noaa.gov/mdl/survey/pgb_survey/dev/OGC_services/](http://www.nws.noaa.gov/mdl/survey/pgb_survey/dev/OGC_services/) as it was used primarily for serving GML-based data.
+It is now [http://www.nws.noaa.gov/om/notification/tin10-59ending_wfs.htm](discontinued).
+
+Also [http://www.nws.noaa.gov/mdl/survey/pgb_survey/dev/OGC_services/](http://www.nws.noaa.gov/mdl/survey/pgb_survey/dev/OGC_services/)
+
 <table>
   <tr>
     <th>Query Method</th>
@@ -88,16 +98,6 @@ using the equivalent collection-based functions.
     <td><code>select</code></td>
     <td><code>NDFDgenLatLonList</code></td>
     <td>Returns a <code>Hash</code> of forecast metrics for multiple latitudes/longitudes.</td>
-  </tr>
-  <tr>
-    <td><code>select_gml</code></td>
-    <td><code>GmlLatLonList</code></td>
-    <td>Returns a <code>Nokogiri::XML::Document</code> of forecast metrics in GML format for multiple latitudes/longitudes.</td>
-  </tr>
-  <tr>
-    <td><code>select_gml_on_time_series</code></td>
-    <td><code>GmlTimeSeries</code></td>
-    <td>Returns a <code>Nokogiri::XML::Document</code> of forecast metrics in GML format for multiple latitudes/longitudes over a specific time period.</td>
   </tr>
   <tr>
     <td><code>select_by_days</code></td>
@@ -140,7 +140,3 @@ To see a description of the NDFD Spatial Reference System (used for collecting l
 http://graphical.weather.gov/docs/ndfdSRS.htm
 
 To see more detailed documention, view the [API Documentation](http://rdoc.info/github/alakra/ndfd-weather-forecast-client/frames)
-
-## Special Thanks
-
-  * To [greencoder](https://github.com/greencoder) for [noaa-dwml-to-json-xslt](https://github.com/greencoder/noaa-dwml-to-json-xslt)

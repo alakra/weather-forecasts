@@ -1,7 +1,0 @@
-[
-  {
-    name: "noaa-dwml-to-json-xslt",
-    commit: "de6e87d6a6eda9e452e2ee515bbe456da2c40eaa",
-    repo: "git@github.com:greencoder/noaa-dwml-to-json-xslt.git"
-  }
-]

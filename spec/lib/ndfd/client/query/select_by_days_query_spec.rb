@@ -1,7 +1,6 @@
 require 'spec_helper'
 
 describe NDFD::Client::SelectByDaysQuery do
-  let(:dimension) { :maxt }
   let(:conditions) {
     {
       :coordinates => [ {:latitude => 38.99, :longitude => -77.01 }],
@@ -30,7 +29,7 @@ describe NDFD::Client::SelectByDaysQuery do
 
     it "returns a valid response" do
       @response.should be_a(Hash)
-      @response["data"]["parameters"]["temperature"]["maximum"]["name"].should == "Daily Maximum Temperature"
+      @response[:parameters]["point1"][:temperature][:maximum][:name].should == "Daily Maximum Temperature"
     end
   end
 end

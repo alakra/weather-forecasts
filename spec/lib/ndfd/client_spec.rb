@@ -17,18 +17,6 @@ describe NDFD::Client do
     end
   end
 
-  describe "#select_gml" do
-    it "returns as NDFD::Client::SelectGmlQuery object" do
-      subject.select_gml(options).should be_a(NDFD::Client::SelectGmlQuery)
-    end
-  end
-
-  describe "#select_gml_on_time_series" do
-    it "returns as NDFD::Client::SelectGmlOnTimeSeriesQuery object" do
-      subject.select_gml_on_time_series(options).should be_a(NDFD::Client::SelectGmlOnTimeSeriesQuery)
-    end
-  end
-
   describe "#select_by_days" do
     it "returns as NDFD::Client::SelectByDaysQuery object" do
       subject.select_by_days.should be_a(NDFD::Client::SelectByDaysQuery)

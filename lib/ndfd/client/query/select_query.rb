@@ -16,10 +16,15 @@ module NDFD
         validate
 
         response = soap_client.call(:ndf_dgen_lat_lon_list, :message => build_message)
-        NDFD::Client::Response.transform(response.body[:ndf_dgen_lat_lon_list_response][:dwml_out])
+        document = Nokogiri::XML(response.body[:ndf_dgen_lat_lon_list_response][:dwml_out])
+        transform_to_hash(document)
       end
 
       protected
+
+      def transform_to_hash(doc)
+        NDFD::DWML.new(doc).process
+      end
 
       def build_message
         {

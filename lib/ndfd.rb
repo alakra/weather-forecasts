@@ -18,5 +18,6 @@ module NDFD
   end
 end
 
+require 'ndfd/dwml'
 require 'ndfd/client'
 require 'ndfd/client/version'

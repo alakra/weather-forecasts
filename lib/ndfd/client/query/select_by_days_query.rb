@@ -15,7 +15,8 @@ module NDFD
         validate
 
         response = soap_client.call(:ndf_dgen_by_day_lat_lon_list, :message => build_message)
-        NDFD::Client::Response.transform(response.body[:ndf_dgen_by_day_lat_lon_list_response][:dwml_by_day_out])
+        document = Nokogiri::XML(response.body[:ndf_dgen_by_day_lat_lon_list_response][:dwml_by_day_out])
+        NDFD::DWML.new(document).process
       end
 
       protected

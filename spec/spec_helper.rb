@@ -1,13 +1,13 @@
 ENV["ENV"] = "test"
 
+require 'coveralls'
+Coveralls.wear!
+
 require 'ndfd'
 
 Bundler.require(:default, NDFD.env)
 
 Time.zone = 'UTC'
-
-require 'coveralls'
-Coveralls.wear!
 
 require 'webmock/rspec'
 require 'vcr'
