@@ -80,7 +80,7 @@ using the equivalent collection-based functions.
 
 **NOTE**: `GmlLatLonList`, `GmlTimeSeries` are not implemented because
 of their limited use (and my inability to figure out what parameters
-to use to make a valid request).  It appears they may be [discontinued](http://www.nws.noaa.gov/om/notification/tin10-59ending_wfs.htm).
+to use to make a valid request).  It appears to be [discontinued](http://www.nws.noaa.gov/om/notification/tin10-59ending_wfs.htm).
 
 <table>
   <tr>
