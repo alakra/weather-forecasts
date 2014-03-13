@@ -69,8 +69,8 @@ Most calls follow the form of:
           where(conditions).
           execute
 
-This will return an `Array`, `Hash` or `Nokogiri::XML::Document` containing
-the data from the response depending on the type of the request.
+This will return an `Array` or `Hash` containing the data from the
+response depending on the type of the request.
 
 **NOTE**: Dates and times passed to the `where` must be
 ActiveSupport::TimeWithZone objects.
