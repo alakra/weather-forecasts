@@ -1,13 +1,12 @@
-# National Digital Forecast Database (NDFD) API Client for Ruby
+# Weather Forecasts for Ruby
 --------------------------------------------------------------------------------
 
-[![Gem Version](https://badge.fury.io/rb/ndfd-weather-forecast-client.png)](http://badge.fury.io/rb/ndfd-weather-forecast-client)
-[![Build Status](https://travis-ci.org/alakra/ndfd-weather-forecast-client.png?branch=master)](https://travis-ci.org/alakra/ndfd-weather-forecast-client)
-[![Code Climate](https://codeclimate.com/github/alakra/ndfd-weather-forecast-client.png)](https://codeclimate.com/github/alakra/ndfd-weather-forecast-client)
-[![Dependency Status](https://gemnasium.com/alakra/ndfd-weather-forecast-client.png)](https://gemnasium.com/alakra/ndfd-weather-forecast-client)
-[![Coverage Status](https://coveralls.io/repos/alakra/ndfd-weather-forecast-client/badge.png)](https://coveralls.io/r/alakra/ndfd-weather-forecast-client)
-[![Inline docs](http://inch-pages.github.io/github/alakra/ndfd-weather-forecast-client.png)](http://inch-pages.github.io/github/alakra/ndfd-weather-forecast-client)
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/alakra/ndfd-weather-forecast-client/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+[![Gem Version](https://badge.fury.io/rb/weather-forecasts.png)](http://badge.fury.io/rb/weather-forecasts)
+[![Build Status](https://travis-ci.org/alakra/weather-forecasts.png?branch=master)](https://travis-ci.org/alakra/weather-forecasts)
+[![Code Climate](https://codeclimate.com/github/alakra/weather-forecasts.png)](https://codeclimate.com/github/alakra/weather-forecasts)
+[![Dependency Status](https://gemnasium.com/alakra/weather-forecasts.png)](https://gemnasium.com/alakra/weather-forecasts)
+[![Coverage Status](https://coveralls.io/repos/alakra/weather-forecasts/badge.png)](https://coveralls.io/r/alakra/weather-forecasts)
+[![Inline docs](http://inch-pages.github.io/github/alakra/weather-forecasts.png)](http://inch-pages.github.io/github/alakra/weather-forecasts)
 
 ## Summary
 
@@ -56,15 +55,15 @@ Libraries used:
 
 ## Installation
 
-    gem install ndfd-weather-forecast-client
+    gem install weather-forecasts
 
 ## Usage
 
-`NDFD.client` is the top-level start point from whence all API calls are executed.
+`WeatherForecasts.client` is the top-level start point from whence all API calls are executed.
 
 Most calls follow the form of:
 
-    NDFD.client.
+    WeatherForecasts.client.
           select(:maxt, :mint, :temp, etc.).
           where(conditions).
           execute
@@ -133,4 +132,4 @@ to use to make a valid request).  It appears to be [discontinued](http://www.nws
 To see a description of the NDFD Spatial Reference System (used for collecting lat/longs in an area)
 http://graphical.weather.gov/docs/ndfdSRS.htm
 
-To see more detailed documention, view the [API Documentation](http://rdoc.info/github/alakra/ndfd-weather-forecast-client/frames)
+To see more detailed documention, view the [API Documentation](http://rdoc.info/github/alakra/weather-forecasts/frames)
