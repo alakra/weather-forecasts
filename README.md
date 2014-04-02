@@ -6,7 +6,7 @@
 [![Dependency Status](https://gemnasium.com/alakra/weather-forecasts.png)](https://gemnasium.com/alakra/weather-forecasts)
 [![Coverage Status](https://coveralls.io/repos/alakra/weather-forecasts/badge.png?branch=master)](https://coveralls.io/r/alakra/weather-forecasts?branch=master)
 
-[![Code Climate](https://codeclimate.com/github/alakra/weather-forecasts.png)](https://codeclimate.com/github/alakra/weather-forecasts)
+[![Code Climate](https://codeclimate.com/github/alakra/weather-forecasts.png)](https://codeclimate.com/github/alakra/weather-forecasts) |
 [![Inline docs](http://inch-pages.github.io/github/alakra/weather-forecasts.png)](http://inch-pages.github.io/github/alakra/weather-forecasts)
 
 ## Summary
