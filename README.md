@@ -5,7 +5,7 @@
 [![Build Status](https://travis-ci.org/alakra/weather-forecasts.png?branch=master)](https://travis-ci.org/alakra/weather-forecasts)
 [![Code Climate](https://codeclimate.com/github/alakra/weather-forecasts.png)](https://codeclimate.com/github/alakra/weather-forecasts)
 [![Dependency Status](https://gemnasium.com/alakra/weather-forecasts.png)](https://gemnasium.com/alakra/weather-forecasts)
-[![Coverage Status](https://coveralls.io/repos/alakra/weather-forecasts/badge.png)](https://coveralls.io/r/alakra/weather-forecasts)
+[![Coverage Status](https://coveralls.io/repos/alakra/weather-forecasts/badge.png?branch=master)](https://coveralls.io/r/alakra/weather-forecasts?branch=master)
 [![Inline docs](http://inch-pages.github.io/github/alakra/weather-forecasts.png)](http://inch-pages.github.io/github/alakra/weather-forecasts)
 
 ## Summary
