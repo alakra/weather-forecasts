@@ -1,7 +1,7 @@
 require 'spec_helper'
 
-describe NDFD::Client do
-  subject { NDFD.client }
+describe WeatherForecasts::Client do
+  subject { described_class.client }
 
   let(:options) { double }
 
@@ -12,50 +12,50 @@ describe NDFD::Client do
   end
 
   describe "#select" do
-    it "returns as NDFD::Client::SelectQuery object" do
-      subject.select(options).should be_a(NDFD::Client::SelectQuery)
+    it "returns as WeatherForecasts::Client::SelectQuery object" do
+      subject.select(options).should be_a(WeatherForecasts::Client::SelectQuery)
     end
   end
 
   describe "#select_by_days" do
-    it "returns as NDFD::Client::SelectByDaysQuery object" do
-      subject.select_by_days.should be_a(NDFD::Client::SelectByDaysQuery)
+    it "returns as WeatherForecasts::Client::SelectByDaysQuery object" do
+      subject.select_by_days.should be_a(WeatherForecasts::Client::SelectByDaysQuery)
     end
   end
 
   describe "#select_coordinates_by_zip" do
-    it "returns as NDFD::Client::SelectCoordinatesByZipQuery object" do
-      subject.select_coordinates_by_zip.should be_a(NDFD::Client::SelectCoordinatesByZipQuery)
+    it "returns as WeatherForecasts::Client::SelectCoordinatesByZipQuery object" do
+      subject.select_coordinates_by_zip.should be_a(WeatherForecasts::Client::SelectCoordinatesByZipQuery)
     end
   end
 
   describe "#select_gridpoint_coordinates" do
-    it "returns as NDFD::Client::SelectGridpointCoordinatesQuery object" do
-      subject.select_gridpoint_coordinates.should be_a(NDFD::Client::SelectGridpointCoordinatesQuery)
+    it "returns as WeatherForecasts::Client::SelectGridpointCoordinatesQuery object" do
+      subject.select_gridpoint_coordinates.should be_a(WeatherForecasts::Client::SelectGridpointCoordinatesQuery)
     end
   end
 
   describe "#select_linepoint_coordinates" do
-    it "returns as NDFD::Client::SelectLinepointCoordinatesQuery object" do
-      subject.select_linepoint_coordinates.should be_a(NDFD::Client::SelectLinepointCoordinatesQuery)
+    it "returns as WeatherForecasts::Client::SelectLinepointCoordinatesQuery object" do
+      subject.select_linepoint_coordinates.should be_a(WeatherForecasts::Client::SelectLinepointCoordinatesQuery)
     end
   end
 
   describe "#select_cities_coordinates" do
-    it "returns as NDFD::Client::SelectCitiesCoordinatesQuery object" do
-      subject.select_coordinates_by_cities.should be_a(NDFD::Client::SelectCoordinatesByCitiesQuery)
+    it "returns as WeatherForecasts::Client::SelectCitiesCoordinatesQuery object" do
+      subject.select_coordinates_by_cities.should be_a(WeatherForecasts::Client::SelectCoordinatesByCitiesQuery)
     end
   end
 
   describe "#select_corner_coordinates" do
-    it "returns as NDFD::Client::SelectCornerCoordinatesQuery object" do
-      subject.select_corner_coordinates.should be_a(NDFD::Client::SelectCornerCoordinatesQuery)
+    it "returns as WeatherForecasts::Client::SelectCornerCoordinatesQuery object" do
+      subject.select_corner_coordinates.should be_a(WeatherForecasts::Client::SelectCornerCoordinatesQuery)
     end
   end
 
   describe "#select_square_coordinates" do
-    it "returns as NDFD::Client::SelectSquareCoordinatesQuery object" do
-      subject.select_square_coordinates.should be_a(NDFD::Client::SelectSquareCoordinatesQuery)
+    it "returns as WeatherForecasts::Client::SelectSquareCoordinatesQuery object" do
+      subject.select_square_coordinates.should be_a(WeatherForecasts::Client::SelectSquareCoordinatesQuery)
     end
   end
 end

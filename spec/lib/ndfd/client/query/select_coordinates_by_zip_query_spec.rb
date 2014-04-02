@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe NDFD::Client::SelectCoordinatesByZipQuery do
+describe WeatherForecasts::Client::SelectCoordinatesByZipQuery do
   let(:conditions) {
     {
       :zip => ["80129", "80128"]
@@ -9,7 +9,7 @@ describe NDFD::Client::SelectCoordinatesByZipQuery do
 
   let(:null_logger)  { Logger.new(File.open("/dev/null", "w")) }
 
-  subject { NDFD.client(:logger => null_logger).select_coordinates_by_zip }
+  subject { WeatherForecasts.client(:logger => null_logger).select_coordinates_by_zip }
 
   # Silence savon's HTTP request logger
   before(:each) do

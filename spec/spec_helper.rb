@@ -3,7 +3,7 @@ ENV["ENV"] = "test"
 require 'coveralls'
 Coveralls.wear!
 
-require 'ndfd'
+require 'weather-forecasts'
 
 Bundler.require(:default, NDFD.env)
 

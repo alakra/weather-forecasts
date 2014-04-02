@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe NDFD::Client::SelectByDaysQuery do
+describe WeatherForecasts::Client::SelectByDaysQuery do
   let(:conditions) {
     {
       :coordinates => [ {:latitude => 38.99, :longitude => -77.01 }],
@@ -13,7 +13,7 @@ describe NDFD::Client::SelectByDaysQuery do
 
   let(:null_logger)  { Logger.new(File.open("/dev/null", "w")) }
 
-  subject { NDFD.client(:logger => null_logger).select_by_days }
+  subject { WeatherForecasts.client(:logger => null_logger).select_by_days }
 
   before(:each) do
     # Silence HTTPI logger (used by Savon)

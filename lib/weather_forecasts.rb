@@ -1,4 +1,4 @@
-module NDFD
+module WeatherForecasts
   module_function
 
   def env
@@ -6,7 +6,7 @@ module NDFD
   end
 
   def client(options = {})
-    NDFD::Client.new(options)
+    Client.new(options)
   end
 
   def root_path
@@ -18,6 +18,6 @@ module NDFD
   end
 end
 
-require 'ndfd/dwml'
-require 'ndfd/client'
-require 'ndfd/client/version'
+require 'weather_forecasts/dwml'
+require 'weather_forecasts/client'
+require 'weather_forecasts/client/version'

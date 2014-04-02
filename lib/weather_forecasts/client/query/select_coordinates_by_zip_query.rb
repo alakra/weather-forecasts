@@ -1,4 +1,4 @@
-module NDFD
+module WeatherForecasts
   class Client
     class SelectCoordinatesByZipQuery < Query
       property :zip, :type => Array, :required => true

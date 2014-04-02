@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe NDFD::Client::SelectCornerCoordinatesQuery do
+describe WeatherForecasts::Client::SelectCornerCoordinatesQuery do
   let(:conditions) {
     {
       :sector => :conus
@@ -9,7 +9,7 @@ describe NDFD::Client::SelectCornerCoordinatesQuery do
 
   let(:null_logger)  { Logger.new(File.open("/dev/null", "w")) }
 
-  subject { NDFD.client(:logger => null_logger).select_corner_coordinates }
+  subject { WeatherForecasts.client(:logger => null_logger).select_corner_coordinates }
 
   # Silence savon's HTTP request logger
   before(:each) do

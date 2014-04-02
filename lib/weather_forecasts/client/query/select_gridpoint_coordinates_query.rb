@@ -1,7 +1,7 @@
-module NDFD
+module WeatherForecasts
   class Client
     class SelectGridpointCoordinatesQuery < Query
-      include NDFD::Client::QueryUtilities
+      include QueryUtilities
 
       property :lower_left_coordinate,  :type => Hash, :required => true, :required_keys => [:latitude, :longitude]
       property :upper_right_coordinate, :type => Hash, :required => true, :required_keys => [:latitude, :longitude]

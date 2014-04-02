@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe NDFD::Client::SelectCoordinatesByCitiesQuery do
+describe WeatherForecasts::Client::SelectCoordinatesByCitiesQuery do
   let(:conditions) {
     {
       :display => :all
@@ -9,7 +9,7 @@ describe NDFD::Client::SelectCoordinatesByCitiesQuery do
 
   let(:null_logger)  { Logger.new(File.open("/dev/null", "w")) }
 
-  subject { NDFD.client(:logger => null_logger).select_coordinates_by_cities }
+  subject { WeatherForecasts.client(:logger => null_logger).select_coordinates_by_cities }
 
   # Silence savon's HTTP request logger
   before(:each) do

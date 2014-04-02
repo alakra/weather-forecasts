@@ -1,7 +1,7 @@
-module NDFD
+module WeatherForecasts
   class Client
     class SelectQuery < Query
-      include NDFD::Client::QueryUtilities
+      include QueryUtilities
 
       set_selection_attributes *FORECAST_ELEMENTS.keys
 

@@ -1,7 +1,7 @@
-module NDFD
+module WeatherForecasts
   class Client
     class SelectLinepointCoordinatesQuery < Query
-      include NDFD::Client::QueryUtilities
+      include QueryUtilities
 
       property :start_coordinate, :type => Hash, :required => true, :required_keys => [:latitude, :longitude]
       property :stop_coordinate,  :type => Hash, :required => true, :required_keys => [:latitude, :longitude]

@@ -1,4 +1,4 @@
-module NDFD
+module WeatherForecasts
   class DWML
     class HeadExtractor
       attr_reader :output, :element

@@ -1,4 +1,4 @@
-module NDFD
+module WeatherForecasts
   class Client
     module QueryUtilities
       def build_coordinates(coordinates)

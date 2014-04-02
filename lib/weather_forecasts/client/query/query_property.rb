@@ -1,4 +1,4 @@
-module NDFD
+module WeatherForecasts
   class Client
     class QueryProperty
       attr_accessor :name, :type, :options, :required_keys, :required, :default
@@ -25,13 +25,13 @@ module NDFD
 
       def validate_required
         if required && @conditions[name.to_sym].blank?
-          raise NDFD::Client::RequiredPropertyError, "The property, #{name.to_s}, is required."
+          raise RequiredPropertyError, "The property, #{name.to_s}, is required."
         end
       end
 
       def validate_type
         unless @conditions[name.to_sym].is_a?(type)
-          raise NDFD::Client::InvalidPropertyTypeError, "The type for #{name} should be an instance of #{type.to_s}."
+          raise InvalidPropertyTypeError, "The type for #{name} should be an instance of #{type.to_s}."
         end
       end
 
@@ -51,7 +51,7 @@ module NDFD
       def validate_options
         value = @conditions[name.to_sym]
         if options.present? && !options.include?(value)
-          raise NDFD::Client::InvalidOptionSpecifiedError, "The option, #{value}, is not valid.  Please use one of the following: #{options.join(', ')}"
+          raise InvalidOptionSpecifiedError, "The option, #{value}, is not valid.  Please use one of the following: #{options.join(', ')}"
         end
       end
 
@@ -61,7 +61,7 @@ module NDFD
       end
 
       def raise_required_keys_missing_error(missing_keys)
-        raise NDFD::Client::RequiredKeysMissingError, "Required keys (#{missing_keys.join(', ')}) are missing for one of the data points (also, they must be in an Array)."
+        raise RequiredKeysMissingError, "Required keys (#{missing_keys.join(', ')}) are missing for one of the data points (also, they must be in an Array)."
       end
     end
   end

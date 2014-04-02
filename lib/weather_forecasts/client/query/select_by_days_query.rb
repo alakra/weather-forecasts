@@ -1,7 +1,7 @@
-module NDFD
+module WeatherForecasts
   class Client
     class SelectByDaysQuery < Query
-      include NDFD::Client::QueryUtilities
+      include QueryUtilities
 
       property :coordinates, :type => Array, :required => true, :required_keys => [:latitude, :longitude]
       property :days,        :type => Fixnum, :required => true
@@ -16,7 +16,7 @@ module NDFD
 
         response = soap_client.call(:ndf_dgen_by_day_lat_lon_list, :message => build_message)
         document = Nokogiri::XML(response.body[:ndf_dgen_by_day_lat_lon_list_response][:dwml_by_day_out])
-        NDFD::DWML.new(document).process
+        DWML.new(document).process
       end
 
       protected

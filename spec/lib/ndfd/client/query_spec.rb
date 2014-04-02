@@ -1,16 +1,16 @@
 require 'spec_helper'
 
-class NDFD::Client::TestQuery < NDFD::Client::Query
+class WeatherForecasts::Client::TestQuery < WeatherForecasts::Client::Query
   set_selection_attributes :thing1, :thing2
 
   property :property1, :type => Array,  :required => true, :required_keys => [:lat, :long]
   property :property2, :type => String, :required => true, :options => ["one", "two"], :default => "one"
 end
 
-describe NDFD::Client::Query do
+describe WeatherForecasts::Client::Query do
   let(:soap_client) { double }
   let(:attrs) { {} }
-  let(:subclass) { NDFD::Client::TestQuery }
+  let(:subclass) { WeatherForecasts::Client::TestQuery }
 
   let(:conditions_with_defaults) { {
       :property1 => [{ :lat => 67.87, :long => -107.37 }]
@@ -63,7 +63,7 @@ describe NDFD::Client::Query do
           instance = subclass.new(soap_client, [:thing1, :thing2, :thing3])
           instance.where(conditions_with_defaults)
 
-          expect { instance.validate }.to raise_error(NDFD::Client::InvalidSelectionAttributeError)
+          expect { instance.validate }.to raise_error(WeatherForecasts::Client::InvalidSelectionAttributeError)
         end
       end
     end
@@ -83,7 +83,7 @@ describe NDFD::Client::Query do
           instance = subclass.new(soap_client)
           instance.where(conditions_with_defaults.merge(:property2 => "blah"))
 
-          expect { instance.validate }.to raise_error(NDFD::Client::InvalidOptionSpecifiedError)
+          expect { instance.validate }.to raise_error(WeatherForecasts::Client::InvalidOptionSpecifiedError)
         end
       end
     end

@@ -1,4 +1,4 @@
-module NDFD
+module WeatherForecasts
   class DWML
     class Location
       class << self

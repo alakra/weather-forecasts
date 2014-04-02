@@ -1,4 +1,4 @@
-module NDFD
+module WeatherForecasts
   class DWML
     class ParameterExtractor
       attr_reader :output, :element, :location, :time_layouts

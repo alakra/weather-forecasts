@@ -3,11 +3,11 @@ require 'active_support/time_with_zone'
 
 Time.zone ||= "UTC"
 
-require 'ndfd/client/query/query_property'
-require 'ndfd/client/query/selection_attributes'
-require 'ndfd/client/query/query_utilities'
+require 'weather_forecasts/client/query/query_property'
+require 'weather_forecasts/client/query/selection_attributes'
+require 'weather_forecasts/client/query/query_utilities'
 
-module NDFD
+module WeatherForecasts
   class Client
     class Query
       FORECAST_ELEMENTS = {
@@ -145,11 +145,11 @@ module NDFD
   end
 end
 
-require 'ndfd/client/query/select_by_days_query'
-require 'ndfd/client/query/select_coordinates_by_cities_query'
-require 'ndfd/client/query/select_coordinates_by_zip_query'
-require 'ndfd/client/query/select_corner_coordinates_query'
-require 'ndfd/client/query/select_gridpoint_coordinates_query'
-require 'ndfd/client/query/select_linepoint_coordinates_query'
-require 'ndfd/client/query/select_square_coordinates_query'
-require 'ndfd/client/query/select_query'
+require 'weather_forecasts/client/query/select_by_days_query'
+require 'weather_forecasts/client/query/select_coordinates_by_cities_query'
+require 'weather_forecasts/client/query/select_coordinates_by_zip_query'
+require 'weather_forecasts/client/query/select_corner_coordinates_query'
+require 'weather_forecasts/client/query/select_gridpoint_coordinates_query'
+require 'weather_forecasts/client/query/select_linepoint_coordinates_query'
+require 'weather_forecasts/client/query/select_square_coordinates_query'
+require 'weather_forecasts/client/query/select_query'

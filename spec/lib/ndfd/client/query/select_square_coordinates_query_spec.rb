@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe NDFD::Client::SelectSquareCoordinatesQuery do
+describe WeatherForecasts::Client::SelectSquareCoordinatesQuery do
   let(:conditions) {
     {
       :center_point => { :latitude => 39.547101, :longitude => -105.215759 },
@@ -11,7 +11,7 @@ describe NDFD::Client::SelectSquareCoordinatesQuery do
 
   let(:null_logger)  { Logger.new(File.open("/dev/null", "w")) }
 
-  subject { NDFD.client(:logger => null_logger).select_square_coordinates }
+  subject { WeatherForecasts.client(:logger => null_logger).select_square_coordinates }
 
   # Silence savon's HTTP request logger
   before(:each) do

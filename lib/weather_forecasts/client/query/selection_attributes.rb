@@ -1,6 +1,6 @@
 require 'active_support/core_ext/array/wrap'
 
-module NDFD
+module WeatherForecasts
   class Client
     class SelectionAttributes
       attr_reader :attributes
@@ -11,7 +11,7 @@ module NDFD
 
       def valid?(attr)
         unless attributes.include?(attr)
-          raise NDFD::Client::InvalidSelectionAttributeError, "The selection attribute, `#{attr}`, is not a valid attribute on this query."
+          raise InvalidSelectionAttributeError, "The selection attribute, `#{attr}`, is not a valid attribute on this query."
         end
       end
     end

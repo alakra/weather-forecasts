@@ -1,8 +1,8 @@
-require 'ndfd/dwml/location'
-require 'ndfd/dwml/time_layout'
-require 'ndfd/dwml/parameter_extractor'
+require 'weather_forecasts/dwml/location'
+require 'weather_forecasts/dwml/time_layout'
+require 'weather_forecasts/dwml/parameter_extractor'
 
-module NDFD
+module WeatherForecasts
   class DWML
     class DataExtractor
       attr_reader :output, :element
@@ -25,11 +25,11 @@ module NDFD
       protected
 
       def extract_locations
-        @locations = NDFD::DWML::Location.extract(element.xpath("location"))
+        @locations = Location.extract(element.xpath("location"))
       end
 
       def extract_time_layouts
-        @time_layouts = NDFD::DWML::TimeLayout.extract(element.xpath("time-layout"))
+        @time_layouts = TimeLayout.extract(element.xpath("time-layout"))
       end
 
       def extract_parameters
@@ -38,7 +38,7 @@ module NDFD
         @output.merge!(
           :parameters => parameters.inject({}) do |memo, parameter|
             location = location_for_parameter(parameter)
-            extractor = NDFD::DWML::ParameterExtractor.new(parameter, location, @time_layouts)
+            extractor = ParameterExtractor.new(parameter, location, @time_layouts)
             memo.merge!(location.location_key => extractor.process)
             memo
           end

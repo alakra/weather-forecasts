@@ -1,4 +1,4 @@
-module NDFD
+module WeatherForecasts
   class Client
     class HelpConsole
       def display_welcome

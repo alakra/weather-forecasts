@@ -1,4 +1,4 @@
-module NDFD
+module WeatherForecasts
   class DWML
     class TimeLayout
       class << self

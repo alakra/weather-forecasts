@@ -1,4 +1,4 @@
-module NDFD
+module WeatherForecasts
   class Client
     class InvalidSelectionAttributeError < ArgumentError
     end

@@ -7,15 +7,15 @@ require 'nokogiri'
 
 $: << File.join(File.dirname(__FILE__), "..", "lib")
 
-require 'ndfd'
-require 'ndfd/client/help_console'
+require 'weather_forecasts'
+require 'weather_forecasts/client/help_console'
 
 require 'irb'
 require 'pp'
 
-client = NDFD.client
+client = WeatherForecasts.client
 
-h = NDFD::Client::HelpConsole.new
+h = WeatherForecasts::Client::HelpConsole.new
 h.display_welcome
 
 IRB.start

@@ -1,7 +1,7 @@
-module NDFD
+module WeatherForecasts
   class Client
     class SelectCornerCoordinatesQuery < Query
-      include NDFD::Client::QueryUtilities
+      include QueryUtilities
 
       SECTOR_GRID_OPTIONS = [
         :conus,

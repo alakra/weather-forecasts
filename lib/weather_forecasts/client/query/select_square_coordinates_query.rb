@@ -1,7 +1,7 @@
-module NDFD
+module WeatherForecasts
   class Client
     class SelectSquareCoordinatesQuery < Query
-      include NDFD::Client::QueryUtilities
+      include QueryUtilities
 
       property :center_point, :type => Hash, :required => true, :required_keys => [:latitude, :longitude]
       property :distance,     :type => Hash, :required => true, :required_keys => [:latitude, :longitude]

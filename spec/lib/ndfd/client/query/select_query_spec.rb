@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe NDFD::Client::SelectQuery do
+describe WeatherForecasts::Client::SelectQuery do
   let(:dimensions) {
     # NOTE: Adding all dimensions to ensure it doesn't blow up when parsing
     [ :maxt,:mint,:temp,:dew,:appt,:pop12,:qpf,:snow,:sky,:rh,:wspd,:wdir,:wx,:icons,
@@ -23,7 +23,7 @@ describe NDFD::Client::SelectQuery do
 
   let(:null_logger)  { Logger.new(File.open("/dev/null", "w")) }
 
-  subject { NDFD.client(:logger => null_logger).select(*dimensions) }
+  subject { WeatherForecasts.client(:logger => null_logger).select(*dimensions) }
 
   before(:each) do
     # Silence HTTPI logger (used by Savon)

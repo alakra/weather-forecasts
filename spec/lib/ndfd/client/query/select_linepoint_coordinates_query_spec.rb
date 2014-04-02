@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe NDFD::Client::SelectLinepointCoordinatesQuery do
+describe WeatherForecasts::Client::SelectLinepointCoordinatesQuery do
   let(:conditions) {
     {
       :start_coordinate => { :latitude => 39.547101, :longitude => -105.215759 },
@@ -10,7 +10,7 @@ describe NDFD::Client::SelectLinepointCoordinatesQuery do
 
   let(:null_logger)  { Logger.new(File.open("/dev/null", "w")) }
 
-  subject { NDFD.client(:logger => null_logger).select_linepoint_coordinates }
+  subject { WeatherForecasts.client(:logger => null_logger).select_linepoint_coordinates }
 
   # Silence savon's HTTP request logger
   before(:each) do
