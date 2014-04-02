@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe WeatherForecasts::Client do
-  subject { described_class.client }
+  subject { WeatherForecasts.client }
 
   let(:options) { double }
 

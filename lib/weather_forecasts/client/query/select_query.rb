@@ -23,7 +23,7 @@ module WeatherForecasts
       protected
 
       def transform_to_hash(doc)
-        NDFD::DWML.new(doc).process
+        WeatherForecasts::DWML.new(doc).process
       end
 
       def build_message

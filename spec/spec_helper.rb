@@ -5,7 +5,7 @@ Coveralls.wear!
 
 require 'weather-forecasts'
 
-Bundler.require(:default, NDFD.env)
+Bundler.require(:default, WeatherForecasts.env)
 
 Time.zone = 'UTC'
 
