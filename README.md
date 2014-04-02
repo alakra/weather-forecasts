@@ -1,5 +1,4 @@
 # Weather Forecasts for Ruby
---------------------------------------------------------------------------------
 
 [![Gem Version](https://badge.fury.io/rb/weather-forecasts.png)](http://badge.fury.io/rb/weather-forecasts)
 [![Build Status](https://travis-ci.org/alakra/weather-forecasts.png?branch=master)](https://travis-ci.org/alakra/weather-forecasts)
