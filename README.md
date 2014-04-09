@@ -131,4 +131,4 @@ to use to make a valid request).  It appears to be [discontinued](http://www.nws
 To see a description of the NDFD Spatial Reference System (used for collecting lat/longs in an area)
 http://graphical.weather.gov/docs/ndfdSRS.htm
 
-To see more detailed documention, view the [API Documentation](http://rdoc.info/github/alakra/weather-forecasts/frames)
+To see more detailed documention, view the [API Documentation](http://rdoc.info/gems/weather-forecasts/frames)
