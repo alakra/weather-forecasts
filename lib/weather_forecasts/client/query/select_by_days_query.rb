@@ -1,3 +1,5 @@
+require 'dwml'
+
 module WeatherForecasts
   class Client
     class SelectByDaysQuery < Query

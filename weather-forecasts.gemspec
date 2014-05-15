@@ -23,6 +23,7 @@ Gem::Specification.new do |s|
 
   s.executables << 'wf-console'
 
+#  s.add_runtime_dependency 'dwml', '~> 1.0.0', '>= 1.0.0'
   s.add_runtime_dependency 'savon', '~> 2.4.0', '>= 2.4.0'
   s.add_runtime_dependency 'nokogiri', '~> 1.6.1', '>= 1.6.1'
   s.add_runtime_dependency 'multi_json', '~> 1.9.0', '>= 1.9.0'

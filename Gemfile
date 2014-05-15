@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 gemspec
 
+gem 'dwml', :path => "./../dwml"
+
 group :test do
   gem 'simplecov', '~>0.8.2', :require => false
   gem 'coveralls', :require => false

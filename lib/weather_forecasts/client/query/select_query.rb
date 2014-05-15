@@ -1,3 +1,5 @@
+require 'dwml'
+
 module WeatherForecasts
   class Client
     class SelectQuery < Query
@@ -23,7 +25,7 @@ module WeatherForecasts
       protected
 
       def transform_to_hash(doc)
-        WeatherForecasts::DWML.new(doc).process
+        DWML.new(doc).process
       end
 
       def build_message
