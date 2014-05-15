@@ -18,6 +18,5 @@ module WeatherForecasts
   end
 end
 
-require 'weather_forecasts/dwml'
 require 'weather_forecasts/client'
 require 'weather_forecasts/client/version'
