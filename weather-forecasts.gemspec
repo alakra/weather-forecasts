@@ -23,11 +23,11 @@ Gem::Specification.new do |s|
 
   s.executables << 'wf-console'
 
-  s.add_runtime_dependency 'dwml', '~> 1.1.0', '>= 1.1.0'
-  s.add_runtime_dependency 'savon', '~> 2.4.0', '>= 2.4.0'
+  s.add_runtime_dependency 'dwml', '~> 1.1.1', '>= 1.1.1'
+  s.add_runtime_dependency 'savon', '~> 2.5.1', '>= 2.5.1'
   s.add_runtime_dependency 'httpi', '~>2.1.0', '>= 2.1.0'
   s.add_runtime_dependency 'nokogiri', '~> 1.6.1', '>= 1.6.1'
-  s.add_runtime_dependency 'multi_json', '~> 1.9.0', '>= 1.9.0'
+  s.add_runtime_dependency 'multi_json', '~> 1.10.1', '>= 1.10.1'
   s.add_runtime_dependency 'activesupport', '~> 4.1.0', '>= 4.1.0'
   s.add_runtime_dependency 'http_logger', '~> 0.4.2', '>= 0.4.2'
 

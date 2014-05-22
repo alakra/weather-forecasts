@@ -20,6 +20,8 @@ http_interactions:
     headers:
       Server:
       - Apache/2.2.15 (Red Hat)
+      X-Nids-Serverid:
+      - www5.mo
       Last-Modified:
       - Thu, 13 Mar 2014 18:05:49 GMT
       Accept-Ranges:
@@ -29,7 +31,7 @@ http_interactions:
       Content-Type:
       - application/wsdl+xml
       Date:
-      - Thu, 13 Mar 2014 19:49:56 GMT
+      - Thu, 22 May 2014 23:16:14 GMT
       Connection:
       - keep-alive
     body:
@@ -378,7 +380,7 @@ http_interactions:
         \     <soap:address location=\"http://graphical.weather.gov/xml/SOAP_server/ndfdXMLserver.php\"/>\n
         \  </port>\n</service>\n\n</definitions>\n"
     http_version: 
-  recorded_at: Thu, 13 Mar 2014 19:49:59 GMT
+  recorded_at: Thu, 22 May 2014 23:16:14 GMT
 - request:
     method: post
     uri: http://graphical.weather.gov/xml/SOAP_server/ndfdXMLserver.php
@@ -407,6 +409,8 @@ http_interactions:
     headers:
       Server:
       - Apache/2.2.15 (Red Hat)
+      X-Nids-Serverid:
+      - www4.mo
       X-Soap-Server:
       - NuSOAP/0.9.5 (1.123)
       Content-Type:
@@ -414,11 +418,11 @@ http_interactions:
       Vary:
       - Accept-Encoding
       Cache-Control:
-      - max-age=170
+      - max-age=180
       Expires:
-      - Thu, 13 Mar 2014 19:52:47 GMT
+      - Thu, 22 May 2014 23:19:15 GMT
       Date:
-      - Thu, 13 Mar 2014 19:49:57 GMT
+      - Thu, 22 May 2014 23:16:15 GMT
       Content-Length:
       - '3586'
       Connection:
@@ -463,5 +467,5 @@ http_interactions:
         39.725028,-104.643652 39.769024,-104.647730 39.813010,-104.651812 39.856986,-104.655897
         39.900953,-104.659985 39.944910,-104.664077 39.988857,-104.668172 40.032794,-104.672271&lt;/latLonList&gt;&lt;/dwml&gt;</listLatLonOut></ns1:LatLonListSubgridResponse></SOAP-ENV:Body></SOAP-ENV:Envelope>
     http_version: 
-  recorded_at: Thu, 13 Mar 2014 19:50:00 GMT
-recorded_with: VCR 2.8.0
+  recorded_at: Thu, 22 May 2014 23:16:15 GMT
+recorded_with: VCR 2.9.0
