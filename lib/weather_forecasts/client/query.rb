@@ -145,6 +145,7 @@ module WeatherForecasts
   end
 end
 
+require 'weather_forecasts/client/query/select_hourly_query'
 require 'weather_forecasts/client/query/select_by_days_query'
 require 'weather_forecasts/client/query/select_coordinates_by_cities_query'
 require 'weather_forecasts/client/query/select_coordinates_by_zip_query'

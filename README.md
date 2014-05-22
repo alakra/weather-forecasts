@@ -50,6 +50,7 @@ Libraries used:
   * savon (for SOAP support)
   * activesupport (for TimeWithZone support)
   * nokogiri (for XML/XSLT parsing)
+  * httpi (for interfacing with http clients)
   * http_logger (for controlling logging output from savon)
 
 ## Installation
@@ -85,6 +86,11 @@ to use to make a valid request).  It appears to be [discontinued](http://www.nws
     <th>Query Method</th>
     <th>API server function</th>
     <th>Description</th>
+  </tr>
+  <tr>
+    <td><code>select_hourly</code></td>
+    <td><code>DigitalDWML from tabular data feed on [NWS](http://www.weather.gov/)</code></td>
+    <td>Returns a <code>Hash</code> of hourly (1-hour) forecast metrics for a single latitude/longitude out to 7 days.</td>
   </tr>
   <tr>
     <td><code>select</code></td>

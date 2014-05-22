@@ -34,6 +34,10 @@ module WeatherForecasts
       SelectQuery.new(soap_client, options)
     end
 
+    def select_hourly
+      SelectHourlyQuery.new(nil)
+    end
+
     def select_by_days
       SelectByDaysQuery.new(soap_client)
     end
