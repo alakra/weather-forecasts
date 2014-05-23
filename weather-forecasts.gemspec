@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.summary = "Client library for retrieving data from NOAA's weather forecast API"
 
   s.description = <<-EOT
-   Utilizing the NDFD (NWS Digital Forecast Database), weather forecasts are retrieved from NOAA's SOAP API and then translated into simple array/hash structures in Ruby."
+   Utilizing the NDFD (National Weather Service Digital Forecast Database), weather forecasts are retrieved from NOAA's SOAP API and then translated into array/hash structures in Ruby.
   EOT
 
   s.homepage = "https://github.com/alakra/weather-forecasts"
