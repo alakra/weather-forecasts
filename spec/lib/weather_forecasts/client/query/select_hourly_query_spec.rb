@@ -18,8 +18,8 @@ describe WeatherForecasts::Client::SelectHourlyQuery do
     end
 
     it "returns a valid response" do
-      @response.should be_a(Hash)
-      @response[:parameters]["point1"][:temperature][:hourly][:values].first[:value].should be_a(Numeric)
+      expect(@response).to be_a(Hash)
+      expect(@response[:parameters]["point1"][:temperature][:hourly][:values].first[:value]).to be_a(Numeric)
     end
   end
 end

@@ -24,9 +24,9 @@ describe WeatherForecasts::Client::SelectCoordinatesByCitiesQuery do
     end
 
     it "returns a valid response" do
-      @response.should be_a(Hash)
+      expect(@response).to be_a(Hash)
       @response["Denver,CO"].values.each do |value|
-        value.should be_a(Numeric)
+        expect(value).to be_a(Numeric)
       end
     end
   end

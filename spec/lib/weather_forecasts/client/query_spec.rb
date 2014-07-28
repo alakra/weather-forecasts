@@ -28,16 +28,16 @@ describe WeatherForecasts::Client::Query do
   describe "#where" do
     it "updates the #conditions attributes and sets any defaults that aren't set" do
       subject.where(conditions_with_defaults)
-      subject.conditions.should == conditions_with_defaults.merge(:property2 => "one")
+      expect(subject.conditions).to eq(conditions_with_defaults.merge(:property2 => "one"))
     end
 
     it "does not set a conditions to a default value if it is already set" do
       subject.where(conditions_overriding_defaults)
-      subject.conditions.should == conditions_overriding_defaults
+      expect(subject.conditions).to eq(conditions_overriding_defaults)
     end
 
     it "returns self" do
-      subject.where(conditions_overriding_defaults).should be_a(subclass)
+      expect(subject.where(conditions_overriding_defaults)).to be_a(subclass)
     end
   end
 

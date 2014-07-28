@@ -25,11 +25,11 @@ describe WeatherForecasts::Client::SelectLinepointCoordinatesQuery do
     end
 
     it "returns a valid response" do
-      @response.should be_a(Array)
+      expect(@response).to be_a(Array)
 
-      @response.first.keys.should include(:latitude, :longitude)
+      expect(@response.first.keys).to include(:latitude, :longitude)
       @response.first.values.each do |value|
-        value.should be_a(Numeric)
+        expect(value).to be_a(Numeric)
       end
     end
   end

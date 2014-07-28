@@ -24,10 +24,12 @@ describe WeatherForecasts::Client::SelectCoordinatesByZipQuery do
     end
 
     it "returns a valid response" do
-      @response.should be_a(Hash)
-      @response.keys.should include(*conditions[:zip])
+      expect(@response).to be_a(Hash)
+      expect(@response.keys).to include(*conditions[:zip])
       @response.each do |_, value|
-        value.values.each {|v| v.should be_a(Numeric) }
+        value.values.each do |v|
+          expect(v).to be_a(Numeric)
+        end
       end
     end
   end

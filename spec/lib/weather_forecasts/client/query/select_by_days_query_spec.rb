@@ -28,8 +28,8 @@ describe WeatherForecasts::Client::SelectByDaysQuery do
     end
 
     it "returns a valid response" do
-      @response.should be_a(Hash)
-      @response[:parameters]["point1"][:temperature][:maximum][:name].should == "Daily Maximum Temperature"
+      expect(@response).to be_a(Hash)
+      expect(@response[:parameters]["point1"][:temperature][:maximum][:name]).to eq("Daily Maximum Temperature")
     end
   end
 end
