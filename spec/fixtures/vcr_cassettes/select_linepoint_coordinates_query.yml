@@ -31,7 +31,7 @@ http_interactions:
       Content-Type:
       - application/wsdl+xml
       Date:
-      - Mon, 28 Jul 2014 17:48:07 GMT
+      - Mon, 28 Jul 2014 17:52:49 GMT
       Connection:
       - keep-alive
     body:
@@ -380,7 +380,7 @@ http_interactions:
         \     <soap:address location=\"http://graphical.weather.gov/xml/SOAP_server/ndfdXMLserver.php\"/>\n
         \  </port>\n</service>\n\n</definitions>\n"
     http_version: 
-  recorded_at: Mon, 28 Jul 2014 17:48:07 GMT
+  recorded_at: Mon, 28 Jul 2014 17:52:49 GMT
 - request:
     method: post
     uri: http://graphical.weather.gov/xml/SOAP_server/ndfdXMLserver.php
@@ -418,11 +418,11 @@ http_interactions:
       Vary:
       - Accept-Encoding
       Cache-Control:
-      - max-age=164
+      - max-age=180
       Expires:
-      - Mon, 28 Jul 2014 17:50:52 GMT
+      - Mon, 28 Jul 2014 17:55:49 GMT
       Date:
-      - Mon, 28 Jul 2014 17:48:08 GMT
+      - Mon, 28 Jul 2014 17:52:49 GMT
       Content-Length:
       - '1138'
       Connection:
@@ -440,5 +440,5 @@ http_interactions:
         39.797095,-104.938052 39.844289,-104.884992 39.891456,-104.831884 39.938596,-104.778728
         39.985708,-104.725524&lt;/latLonList&gt;&lt;/dwml&gt;</listLatLonOut></ns1:LatLonListLineResponse></SOAP-ENV:Body></SOAP-ENV:Envelope>
     http_version: 
-  recorded_at: Mon, 28 Jul 2014 17:48:08 GMT
+  recorded_at: Mon, 28 Jul 2014 17:52:49 GMT
 recorded_with: VCR 2.9.2

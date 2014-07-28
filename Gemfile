@@ -2,9 +2,9 @@ source 'https://rubygems.org'
 gemspec
 
 group :test do
-  gem 'simplecov', '~>0.8.2', :require => false
+  gem 'simplecov', '~>0.9.0', :require => false
   gem 'coveralls', :require => false
-  gem 'webmock', '~>1.17.4'
+  gem 'webmock', '~>1.18.0'
   gem 'vcr', '~>2.9.0'
-  gem 'rspec', '~>2.14.0'
+  gem 'rspec', '~>3.0.0'
 end

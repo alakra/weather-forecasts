@@ -1,5 +1,10 @@
 ENV["ENV"] = "test"
 
+# Uncomment this and comment out the coveralls code to generate local
+# coverage reports
+# require 'simplecov'
+# SimpleCov.start
+
 require 'coveralls'
 Coveralls.wear!
 

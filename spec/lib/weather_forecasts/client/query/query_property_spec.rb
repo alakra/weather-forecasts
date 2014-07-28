@@ -8,12 +8,12 @@ describe WeatherForecasts::Client::QueryProperty do
 
   describe "#initialize" do
     it "sets the appropriate defaults" do
-      subject.name.should == name
-      subject.type.should == String
-      subject.options.should be_nil
-      subject.default.should be_nil
-      subject.required.should be_false
-      subject.required_keys.should be_empty
+      expect(subject.name).to eq(name)
+      expect(subject.type).to eq(String)
+      expect(subject.options).to be_nil
+      expect(subject.default).to be_nil
+      expect(subject.required).to be_falsey
+      expect(subject.required_keys).to be_empty
     end
   end
 

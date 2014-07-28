@@ -31,7 +31,7 @@ http_interactions:
       Content-Type:
       - application/wsdl+xml
       Date:
-      - Mon, 28 Jul 2014 17:48:08 GMT
+      - Mon, 28 Jul 2014 17:52:36 GMT
       Connection:
       - keep-alive
     body:
@@ -380,7 +380,7 @@ http_interactions:
         \     <soap:address location=\"http://graphical.weather.gov/xml/SOAP_server/ndfdXMLserver.php\"/>\n
         \  </port>\n</service>\n\n</definitions>\n"
     http_version: 
-  recorded_at: Mon, 28 Jul 2014 17:48:08 GMT
+  recorded_at: Mon, 28 Jul 2014 17:52:36 GMT
 - request:
     method: post
     uri: http://graphical.weather.gov/xml/SOAP_server/ndfdXMLserver.php
@@ -388,7 +388,7 @@ http_interactions:
       encoding: UTF-8
       string: <?xml version="1.0" encoding="UTF-8"?><env:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl"
-        xmlns:env="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ins0="http://graphical.weather.gov/xml/DWMLgen/schema/DWML.xsd"><env:Body><tns:NDFDgenLatLonList><listLatLon>38.99,-77.01</listLatLon><product>time-series</product><startTime>2014-07-28T17:48:08Z</startTime><endTime>2014-08-03T17:48:08Z</endTime><unit>e</unit><weatherParameters><maxt>1</maxt><mint>1</mint><temp>1</temp><dew>1</dew><appt>1</appt><pop12>1</pop12><qpf>1</qpf><snow>1</snow><sky>1</sky><rh>1</rh><wspd>1</wspd><wdir>1</wdir><wx>1</wx><icons>1</icons><waveh>1</waveh><incw34>1</incw34><incw50>1</incw50><incw64>1</incw64><cumw34>1</cumw34><cumw50>1</cumw50><cumw64>1</cumw64><wgust>1</wgust><critfireo>1</critfireo><dryfireo>1</dryfireo><conhazo>1</conhazo><ptornado>1</ptornado><phail>1</phail><ptstmwinds>1</ptstmwinds><pxtornado>1</pxtornado><pxhail>1</pxhail><pxtstmwinds>1</pxtstmwinds><ptotsvrtstm>1</ptotsvrtstm><pxtotsvrtstm>1</pxtotsvrtstm><tmpabv14d>1</tmpabv14d><tmpblw14d>1</tmpblw14d><tmpabv30d>1</tmpabv30d><tmpblw30d>1</tmpblw30d><tmpabv90d>1</tmpabv90d><tmpblw90d>1</tmpblw90d><prcpabv14d>1</prcpabv14d><prcpblw14d>1</prcpblw14d><prcpabv30d>1</prcpabv30d><prcpblw30d>1</prcpblw30d><prcpabv90d>1</prcpabv90d><prcpblw90d>1</prcpblw90d><precipaR>1</precipaR><skyR>1</skyR><tdR>1</tdR><tempR>1</tempR><wdirR>1</wdirR><wspdR>1</wspdR><wwa>1</wwa><iceaccum>1</iceaccum><maxrh>1</maxrh><minrh>1</minrh></weatherParameters></tns:NDFDgenLatLonList></env:Body></env:Envelope>
+        xmlns:env="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ins0="http://graphical.weather.gov/xml/DWMLgen/schema/DWML.xsd"><env:Body><tns:NDFDgenLatLonList><listLatLon>38.99,-77.01</listLatLon><product>time-series</product><startTime>2014-07-28T17:52:36Z</startTime><endTime>2014-08-03T17:52:36Z</endTime><unit>e</unit><weatherParameters><maxt>1</maxt><mint>1</mint><temp>1</temp><dew>1</dew><appt>1</appt><pop12>1</pop12><qpf>1</qpf><snow>1</snow><sky>1</sky><rh>1</rh><wspd>1</wspd><wdir>1</wdir><wx>1</wx><icons>1</icons><waveh>1</waveh><incw34>1</incw34><incw50>1</incw50><incw64>1</incw64><cumw34>1</cumw34><cumw50>1</cumw50><cumw64>1</cumw64><wgust>1</wgust><critfireo>1</critfireo><dryfireo>1</dryfireo><conhazo>1</conhazo><ptornado>1</ptornado><phail>1</phail><ptstmwinds>1</ptstmwinds><pxtornado>1</pxtornado><pxhail>1</pxhail><pxtstmwinds>1</pxtstmwinds><ptotsvrtstm>1</ptotsvrtstm><pxtotsvrtstm>1</pxtotsvrtstm><tmpabv14d>1</tmpabv14d><tmpblw14d>1</tmpblw14d><tmpabv30d>1</tmpabv30d><tmpblw30d>1</tmpblw30d><tmpabv90d>1</tmpabv90d><tmpblw90d>1</tmpblw90d><prcpabv14d>1</prcpabv14d><prcpblw14d>1</prcpblw14d><prcpabv30d>1</prcpabv30d><prcpblw30d>1</prcpblw30d><prcpabv90d>1</prcpabv90d><prcpblw90d>1</prcpblw90d><precipaR>1</precipaR><skyR>1</skyR><tdR>1</tdR><tempR>1</tempR><wdirR>1</wdirR><wspdR>1</wspdR><wwa>1</wwa><iceaccum>1</iceaccum><maxrh>1</maxrh><minrh>1</minrh></weatherParameters></tns:NDFDgenLatLonList></env:Body></env:Envelope>
     headers:
       Soapaction:
       - '"http://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl#NDFDgenLatLonList"'
@@ -410,7 +410,7 @@ http_interactions:
       Server:
       - Apache/2.2.15 (Red Hat)
       X-Nids-Serverid:
-      - www5.mo
+      - www4.mo
       X-Soap-Server:
       - NuSOAP/0.9.5 (1.123)
       Content-Type:
@@ -418,11 +418,11 @@ http_interactions:
       Vary:
       - Accept-Encoding
       Cache-Control:
-      - max-age=180
+      - max-age=176
       Expires:
-      - Mon, 28 Jul 2014 17:51:08 GMT
+      - Mon, 28 Jul 2014 17:55:32 GMT
       Date:
-      - Mon, 28 Jul 2014 17:48:08 GMT
+      - Mon, 28 Jul 2014 17:52:36 GMT
       Transfer-Encoding:
       - chunked
       Connection:
@@ -438,7 +438,7 @@ http_interactions:
               &lt;title&gt;NOAA&apos;s National Weather Service Forecast Data&lt;/title&gt;
               &lt;field&gt;meteorological&lt;/field&gt;
               &lt;category&gt;forecast&lt;/category&gt;
-              &lt;creation-date refresh-frequency=&quot;PT1H&quot;&gt;2014-07-28T17:48:08Z&lt;/creation-date&gt;
+              &lt;creation-date refresh-frequency=&quot;PT1H&quot;&gt;2014-07-28T17:52:36Z&lt;/creation-date&gt;
             &lt;/product&gt;
             &lt;source&gt;
               &lt;more-information&gt;http://www.nws.noaa.gov/forecasts/xml/&lt;/more-information&gt;
@@ -1676,5 +1676,5 @@ http_interactions:
         &lt;/dwml&gt;
         </dwmlOut></ns1:NDFDgenLatLonListResponse></SOAP-ENV:Body></SOAP-ENV:Envelope>
     http_version: 
-  recorded_at: Mon, 28 Jul 2014 17:48:08 GMT
+  recorded_at: Mon, 28 Jul 2014 17:52:36 GMT
 recorded_with: VCR 2.9.2
