@@ -23,7 +23,7 @@ Gem::Specification.new do |s|
 
   s.executables << 'wf-console'
 
-  s.add_runtime_dependency 'dwml', '~> 1.1.2', '>= 1.1.2'
+  s.add_runtime_dependency 'dwml', '~> 1.1.3', '>= 1.1.3'
   s.add_runtime_dependency 'savon', '~> 2.6.0', '>= 2.6.0'
   s.add_runtime_dependency 'httpi', '~>2.2.0', '>= 2.2.0'
   s.add_runtime_dependency 'nokogiri', '~> 1.6.1', '>= 1.6.1'
