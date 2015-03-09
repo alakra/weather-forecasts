@@ -7,10 +7,8 @@ http_interactions:
       encoding: US-ASCII
       string: ''
     headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - "*/*"
+      - ! '*/*'
       User-Agent:
       - Ruby
   response:
@@ -21,7 +19,7 @@ http_interactions:
       Server:
       - Apache/2.2.15 (Red Hat)
       X-Nids-Serverid:
-      - www5.md
+      - www4.md
       Last-Modified:
       - Thu, 13 Mar 2014 18:05:49 GMT
       Accept-Ranges:
@@ -31,12 +29,12 @@ http_interactions:
       Content-Type:
       - application/wsdl+xml
       Date:
-      - Thu, 26 Feb 2015 17:05:20 GMT
+      - Mon, 09 Mar 2015 16:11:12 GMT
       Connection:
       - keep-alive
     body:
-      encoding: UTF-8
-      string: "<?xml version=\"1.0\"?>\n\n<!--   **********************************************************************
+      encoding: US-ASCII
+      string: ! "<?xml version=\"1.0\"?>\n\n<!--   **********************************************************************
         \  \n                                                                           \n
         \      ndfdXML.wsdl   \n\n       John L. Schattel          MDL                4
         July 2007  \n       Aniesha L. Alford\n       Red Hat Linux                                Apache
@@ -380,27 +378,25 @@ http_interactions:
         \     <soap:address location=\"http://graphical.weather.gov/xml/SOAP_server/ndfdXMLserver.php\"/>\n
         \  </port>\n</service>\n\n</definitions>\n"
     http_version: 
-  recorded_at: Thu, 26 Feb 2015 17:05:20 GMT
+  recorded_at: Mon, 09 Mar 2015 16:11:12 GMT
 - request:
     method: post
     uri: http://graphical.weather.gov/xml/SOAP_server/ndfdXMLserver.php
     body:
-      encoding: UTF-8
+      encoding: US-ASCII
       string: <?xml version="1.0" encoding="UTF-8"?><env:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl"
-        xmlns:env="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ins0="http://graphical.weather.gov/xml/DWMLgen/schema/DWML.xsd"><env:Body><tns:NDFDgenByDayLatLonList><listLatLong>38.99,-77.01</listLatLong><startDate>2015-02-26T17:05:20Z</startDate><numDay>5</numDay><unit>e</unit><format>24
+        xmlns:env="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ins0="http://graphical.weather.gov/xml/DWMLgen/schema/DWML.xsd"><env:Body><tns:NDFDgenByDayLatLonList><listLatLong>38.99,-77.01</listLatLong><startDate>2015-03-09T16:11:11Z</startDate><numDay>5</numDay><unit>e</unit><format>24
         hourly</format></tns:NDFDgenByDayLatLonList></env:Body></env:Envelope>
     headers:
       Soapaction:
-      - '"http://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl#NDFDgenByDayLatLonList"'
+      - ! '"http://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl#NDFDgenByDayLatLonList"'
       Content-Type:
       - text/xml;charset=UTF-8
       Content-Length:
       - '579'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - "*/*"
+      - ! '*/*'
       User-Agent:
       - Ruby
   response:
@@ -411,152 +407,128 @@ http_interactions:
       Server:
       - Apache/2.2.15 (Red Hat)
       X-Nids-Serverid:
-      - www5.md
+      - www5.mo
       X-Soap-Server:
       - NuSOAP/0.9.5 (1.123)
       Content-Type:
       - text/xml; charset=ISO-8859-1
-      Vary:
-      - Accept-Encoding
       Cache-Control:
-      - max-age=168
+      - max-age=180
       Expires:
-      - Thu, 26 Feb 2015 17:08:09 GMT
+      - Mon, 09 Mar 2015 16:14:12 GMT
       Date:
-      - Thu, 26 Feb 2015 17:05:21 GMT
+      - Mon, 09 Mar 2015 16:11:12 GMT
       Content-Length:
-      - '9048'
+      - '9406'
       Connection:
       - keep-alive
     body:
-      encoding: UTF-8
-      string: |-
-        <?xml version="1.0" encoding="ISO-8859-1"?><SOAP-ENV:Envelope SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"><SOAP-ENV:Body><ns1:NDFDgenByDayLatLonListResponse xmlns:ns1="http://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl"><dwmlByDayOut xsi:type="xsd:string">&lt;?xml version=&quot;1.0&quot;?&gt;
-        &lt;dwml version=&quot;1.0&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xsi:noNamespaceSchemaLocation=&quot;http://www.nws.noaa.gov/forecasts/xml/DWMLgen/schema/DWML.xsd&quot;&gt;
-          &lt;head&gt;
-            &lt;product srsName=&quot;WGS 1984&quot; concise-name=&quot;dwmlByDay&quot; operational-mode=&quot;official&quot;&gt;
-              &lt;title&gt;NOAA&apos;s National Weather Service Forecast by 24 Hour Period&lt;/title&gt;
-              &lt;field&gt;meteorological&lt;/field&gt;
-              &lt;category&gt;forecast&lt;/category&gt;
-              &lt;creation-date refresh-frequency=&quot;PT1H&quot;&gt;2015-02-26T17:05:20Z&lt;/creation-date&gt;
-            &lt;/product&gt;
-            &lt;source&gt;
-              &lt;more-information&gt;http://www.nws.noaa.gov/forecasts/xml/&lt;/more-information&gt;
-              &lt;production-center&gt;Meteorological Development Laboratory&lt;sub-center&gt;Product Generation Branch&lt;/sub-center&gt;&lt;/production-center&gt;
-              &lt;disclaimer&gt;http://www.nws.noaa.gov/disclaimer.html&lt;/disclaimer&gt;
-              &lt;credit&gt;http://www.weather.gov/&lt;/credit&gt;
-              &lt;credit-logo&gt;http://www.weather.gov/images/xml_logo.gif&lt;/credit-logo&gt;
-              &lt;feedback&gt;http://www.weather.gov/feedback.php&lt;/feedback&gt;
-            &lt;/source&gt;
-          &lt;/head&gt;
-          &lt;data&gt;
-            &lt;location&gt;
-              &lt;location-key&gt;point1&lt;/location-key&gt;
-              &lt;point latitude=&quot;38.99&quot; longitude=&quot;-77.01&quot;/&gt;
-            &lt;/location&gt;
-            &lt;moreWeatherInformation applicable-location=&quot;point1&quot;&gt;http://forecast.weather.gov/MapClick.php?textField1=38.99&amp;amp;textField2=-77.01&lt;/moreWeatherInformation&gt;
-            &lt;time-layout time-coordinate=&quot;local&quot; summarization=&quot;24hourly&quot;&gt;
-              &lt;layout-key&gt;k-p24h-n5-1&lt;/layout-key&gt;
-              &lt;start-valid-time&gt;2015-02-26T06:00:00-05:00&lt;/start-valid-time&gt;
-              &lt;end-valid-time&gt;2015-02-27T06:00:00-05:00&lt;/end-valid-time&gt;
-              &lt;start-valid-time&gt;2015-02-27T06:00:00-05:00&lt;/start-valid-time&gt;
-              &lt;end-valid-time&gt;2015-02-28T06:00:00-05:00&lt;/end-valid-time&gt;
-              &lt;start-valid-time&gt;2015-02-28T06:00:00-05:00&lt;/start-valid-time&gt;
-              &lt;end-valid-time&gt;2015-03-01T06:00:00-05:00&lt;/end-valid-time&gt;
-              &lt;start-valid-time&gt;2015-03-01T06:00:00-05:00&lt;/start-valid-time&gt;
-              &lt;end-valid-time&gt;2015-03-02T06:00:00-05:00&lt;/end-valid-time&gt;
-              &lt;start-valid-time&gt;2015-03-02T06:00:00-05:00&lt;/start-valid-time&gt;
-              &lt;end-valid-time&gt;2015-03-03T06:00:00-05:00&lt;/end-valid-time&gt;
-            &lt;/time-layout&gt;
-            &lt;time-layout time-coordinate=&quot;local&quot; summarization=&quot;12hourly&quot;&gt;
-              &lt;layout-key&gt;k-p12h-n10-2&lt;/layout-key&gt;
-              &lt;start-valid-time&gt;2015-02-26T06:00:00-05:00&lt;/start-valid-time&gt;
-              &lt;end-valid-time&gt;2015-02-26T18:00:00-05:00&lt;/end-valid-time&gt;
-              &lt;start-valid-time&gt;2015-02-26T18:00:00-05:00&lt;/start-valid-time&gt;
-              &lt;end-valid-time&gt;2015-02-27T06:00:00-05:00&lt;/end-valid-time&gt;
-              &lt;start-valid-time&gt;2015-02-27T06:00:00-05:00&lt;/start-valid-time&gt;
-              &lt;end-valid-time&gt;2015-02-27T18:00:00-05:00&lt;/end-valid-time&gt;
-              &lt;start-valid-time&gt;2015-02-27T18:00:00-05:00&lt;/start-valid-time&gt;
-              &lt;end-valid-time&gt;2015-02-28T06:00:00-05:00&lt;/end-valid-time&gt;
-              &lt;start-valid-time&gt;2015-02-28T06:00:00-05:00&lt;/start-valid-time&gt;
-              &lt;end-valid-time&gt;2015-02-28T18:00:00-05:00&lt;/end-valid-time&gt;
-              &lt;start-valid-time&gt;2015-02-28T18:00:00-05:00&lt;/start-valid-time&gt;
-              &lt;end-valid-time&gt;2015-03-01T06:00:00-05:00&lt;/end-valid-time&gt;
-              &lt;start-valid-time&gt;2015-03-01T06:00:00-05:00&lt;/start-valid-time&gt;
-              &lt;end-valid-time&gt;2015-03-01T18:00:00-05:00&lt;/end-valid-time&gt;
-              &lt;start-valid-time&gt;2015-03-01T18:00:00-05:00&lt;/start-valid-time&gt;
-              &lt;end-valid-time&gt;2015-03-02T06:00:00-05:00&lt;/end-valid-time&gt;
-              &lt;start-valid-time&gt;2015-03-02T06:00:00-05:00&lt;/start-valid-time&gt;
-              &lt;end-valid-time&gt;2015-03-02T18:00:00-05:00&lt;/end-valid-time&gt;
-              &lt;start-valid-time&gt;2015-03-02T18:00:00-05:00&lt;/start-valid-time&gt;
-              &lt;end-valid-time&gt;2015-03-03T06:00:00-05:00&lt;/end-valid-time&gt;
-            &lt;/time-layout&gt;
-            &lt;time-layout time-coordinate=&quot;local&quot; summarization=&quot;24hourly&quot;&gt;
-              &lt;layout-key&gt;k-p5d-n1-3&lt;/layout-key&gt;
-              &lt;start-valid-time&gt;2015-02-26T06:00:00-05:00&lt;/start-valid-time&gt;
-              &lt;end-valid-time&gt;2015-03-03T06:00:00-05:00&lt;/end-valid-time&gt;
-            &lt;/time-layout&gt;
-            &lt;parameters applicable-location=&quot;point1&quot;&gt;
-              &lt;temperature type=&quot;maximum&quot; units=&quot;Fahrenheit&quot; time-layout=&quot;k-p24h-n5-1&quot;&gt;
-                &lt;name&gt;Daily Maximum Temperature&lt;/name&gt;
-                &lt;value&gt;30&lt;/value&gt;
-                &lt;value&gt;31&lt;/value&gt;
-                &lt;value&gt;28&lt;/value&gt;
-                &lt;value&gt;38&lt;/value&gt;
-                &lt;value&gt;46&lt;/value&gt;
-              &lt;/temperature&gt;
-              &lt;temperature type=&quot;minimum&quot; units=&quot;Fahrenheit&quot; time-layout=&quot;k-p24h-n5-1&quot;&gt;
-                &lt;name&gt;Daily Minimum Temperature&lt;/name&gt;
-                &lt;value&gt;21&lt;/value&gt;
-                &lt;value&gt;15&lt;/value&gt;
-                &lt;value&gt;12&lt;/value&gt;
-                &lt;value&gt;35&lt;/value&gt;
-                &lt;value&gt;28&lt;/value&gt;
-              &lt;/temperature&gt;
-              &lt;probability-of-precipitation type=&quot;12 hour&quot; units=&quot;percent&quot; time-layout=&quot;k-p12h-n10-2&quot;&gt;
-                &lt;name&gt;12 Hourly Probability of Precipitation&lt;/name&gt;
-                &lt;value&gt;93&lt;/value&gt;
-                &lt;value&gt;38&lt;/value&gt;
-                &lt;value&gt;20&lt;/value&gt;
-                &lt;value&gt;3&lt;/value&gt;
-                &lt;value&gt;11&lt;/value&gt;
-                &lt;value&gt;3&lt;/value&gt;
-                &lt;value&gt;9&lt;/value&gt;
-                &lt;value&gt;45&lt;/value&gt;
-                &lt;value&gt;9&lt;/value&gt;
-                &lt;value&gt;13&lt;/value&gt;
-              &lt;/probability-of-precipitation&gt;
-              &lt;weather time-layout=&quot;k-p24h-n5-1&quot;&gt;
-                &lt;name&gt;Weather Type, Coverage, and Intensity&lt;/name&gt;
-                &lt;weather-conditions weather-summary=&quot;Chance Snow Showers&quot;&gt;
-                  &lt;value coverage=&quot;chance&quot; intensity=&quot;light&quot; weather-type=&quot;snow showers&quot; qualifier=&quot;none&quot;/&gt;
-                &lt;/weather-conditions&gt;
-                &lt;weather-conditions weather-summary=&quot;Slight Chance Snow Showers&quot;&gt;
-                  &lt;value coverage=&quot;slight chance&quot; intensity=&quot;light&quot; weather-type=&quot;snow showers&quot; qualifier=&quot;none&quot;/&gt;
-                &lt;/weather-conditions&gt;
-                &lt;weather-conditions weather-summary=&quot;Partly Sunny&quot;/&gt;
-                &lt;weather-conditions weather-summary=&quot;Chance Rain/Snow&quot;&gt;
-                  &lt;value coverage=&quot;chance&quot; intensity=&quot;light&quot; weather-type=&quot;rain&quot; qualifier=&quot;none&quot;/&gt;
-                  &lt;value coverage=&quot;chance&quot; intensity=&quot;light&quot; additive=&quot;or&quot; weather-type=&quot;snow&quot; qualifier=&quot;or&quot;/&gt;
-                &lt;/weather-conditions&gt;
-                &lt;weather-conditions weather-summary=&quot;Mostly Cloudy&quot;/&gt;
-              &lt;/weather&gt;
-              &lt;conditions-icon type=&quot;forecast-NWS&quot; time-layout=&quot;k-p24h-n5-1&quot;&gt;
-                &lt;name&gt;Conditions Icons&lt;/name&gt;
-                &lt;icon-link&gt;http://www.nws.noaa.gov/weather/images/fcicons/sn90.jpg&lt;/icon-link&gt;
-                &lt;icon-link&gt;http://www.nws.noaa.gov/weather/images/fcicons/sn20.jpg&lt;/icon-link&gt;
-                &lt;icon-link&gt;http://www.nws.noaa.gov/weather/images/fcicons/sct.jpg&lt;/icon-link&gt;
-                &lt;icon-link&gt;http://www.nws.noaa.gov/weather/images/fcicons/rasn50.jpg&lt;/icon-link&gt;
-                &lt;icon-link&gt;http://www.nws.noaa.gov/weather/images/fcicons/bkn.jpg&lt;/icon-link&gt;
-              &lt;/conditions-icon&gt;
-              &lt;hazards time-layout=&quot;k-p5d-n1-3&quot;&gt;
-                &lt;name&gt;Watches, Warnings, and Advisories&lt;/name&gt;
-                &lt;hazard-conditions xsi:nil=&quot;true&quot;/&gt;
-              &lt;/hazards&gt;
-            &lt;/parameters&gt;
-          &lt;/data&gt;
-        &lt;/dwml&gt;
-        </dwmlByDayOut></ns1:NDFDgenByDayLatLonListResponse></SOAP-ENV:Body></SOAP-ENV:Envelope>
+      encoding: US-ASCII
+      string: ! "<?xml version=\"1.0\" encoding=\"ISO-8859-1\"?><SOAP-ENV:Envelope
+        SOAP-ENV:encodingStyle=\"http://schemas.xmlsoap.org/soap/encoding/\" xmlns:SOAP-ENV=\"http://schemas.xmlsoap.org/soap/envelope/\"
+        xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"
+        xmlns:SOAP-ENC=\"http://schemas.xmlsoap.org/soap/encoding/\"><SOAP-ENV:Body><ns1:NDFDgenByDayLatLonListResponse
+        xmlns:ns1=\"http://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl\"><dwmlByDayOut
+        xsi:type=\"xsd:string\">&lt;?xml version=&quot;1.0&quot;?&gt;\n&lt;dwml version=&quot;1.0&quot;
+        xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
+        xsi:noNamespaceSchemaLocation=&quot;http://www.nws.noaa.gov/forecasts/xml/DWMLgen/schema/DWML.xsd&quot;&gt;\n
+        \ &lt;head&gt;\n    &lt;product srsName=&quot;WGS 1984&quot; concise-name=&quot;dwmlByDay&quot;
+        operational-mode=&quot;official&quot;&gt;\n      &lt;title&gt;NOAA&apos;s
+        National Weather Service Forecast by 24 Hour Period&lt;/title&gt;\n      &lt;field&gt;meteorological&lt;/field&gt;\n
+        \     &lt;category&gt;forecast&lt;/category&gt;\n      &lt;creation-date refresh-frequency=&quot;PT1H&quot;&gt;2015-03-09T16:11:12Z&lt;/creation-date&gt;\n
+        \   &lt;/product&gt;\n    &lt;source&gt;\n      &lt;more-information&gt;http://www.nws.noaa.gov/forecasts/xml/&lt;/more-information&gt;\n
+        \     &lt;production-center&gt;Meteorological Development Laboratory&lt;sub-center&gt;Product
+        Generation Branch&lt;/sub-center&gt;&lt;/production-center&gt;\n      &lt;disclaimer&gt;http://www.nws.noaa.gov/disclaimer.html&lt;/disclaimer&gt;\n
+        \     &lt;credit&gt;http://www.weather.gov/&lt;/credit&gt;\n      &lt;credit-logo&gt;http://www.weather.gov/images/xml_logo.gif&lt;/credit-logo&gt;\n
+        \     &lt;feedback&gt;http://www.weather.gov/feedback.php&lt;/feedback&gt;\n
+        \   &lt;/source&gt;\n  &lt;/head&gt;\n  &lt;data&gt;\n    &lt;location&gt;\n
+        \     &lt;location-key&gt;point1&lt;/location-key&gt;\n      &lt;point latitude=&quot;38.99&quot;
+        longitude=&quot;-77.01&quot;/&gt;\n    &lt;/location&gt;\n    &lt;moreWeatherInformation
+        applicable-location=&quot;point1&quot;&gt;http://forecast.weather.gov/MapClick.php?textField1=38.99&amp;amp;textField2=-77.01&lt;/moreWeatherInformation&gt;\n
+        \   &lt;time-layout time-coordinate=&quot;local&quot; summarization=&quot;24hourly&quot;&gt;\n
+        \     &lt;layout-key&gt;k-p24h-n5-1&lt;/layout-key&gt;\n      &lt;start-valid-time&gt;2015-03-09T06:00:00-04:00&lt;/start-valid-time&gt;\n
+        \     &lt;end-valid-time&gt;2015-03-10T06:00:00-04:00&lt;/end-valid-time&gt;\n
+        \     &lt;start-valid-time&gt;2015-03-10T06:00:00-04:00&lt;/start-valid-time&gt;\n
+        \     &lt;end-valid-time&gt;2015-03-11T06:00:00-04:00&lt;/end-valid-time&gt;\n
+        \     &lt;start-valid-time&gt;2015-03-11T06:00:00-04:00&lt;/start-valid-time&gt;\n
+        \     &lt;end-valid-time&gt;2015-03-12T06:00:00-04:00&lt;/end-valid-time&gt;\n
+        \     &lt;start-valid-time&gt;2015-03-12T06:00:00-04:00&lt;/start-valid-time&gt;\n
+        \     &lt;end-valid-time&gt;2015-03-13T06:00:00-04:00&lt;/end-valid-time&gt;\n
+        \     &lt;start-valid-time&gt;2015-03-13T06:00:00-04:00&lt;/start-valid-time&gt;\n
+        \     &lt;end-valid-time&gt;2015-03-14T06:00:00-04:00&lt;/end-valid-time&gt;\n
+        \   &lt;/time-layout&gt;\n    &lt;time-layout time-coordinate=&quot;local&quot;
+        summarization=&quot;12hourly&quot;&gt;\n      &lt;layout-key&gt;k-p12h-n10-2&lt;/layout-key&gt;\n
+        \     &lt;start-valid-time&gt;2015-03-09T06:00:00-04:00&lt;/start-valid-time&gt;\n
+        \     &lt;end-valid-time&gt;2015-03-09T18:00:00-04:00&lt;/end-valid-time&gt;\n
+        \     &lt;start-valid-time&gt;2015-03-09T18:00:00-04:00&lt;/start-valid-time&gt;\n
+        \     &lt;end-valid-time&gt;2015-03-10T06:00:00-04:00&lt;/end-valid-time&gt;\n
+        \     &lt;start-valid-time&gt;2015-03-10T06:00:00-04:00&lt;/start-valid-time&gt;\n
+        \     &lt;end-valid-time&gt;2015-03-10T18:00:00-04:00&lt;/end-valid-time&gt;\n
+        \     &lt;start-valid-time&gt;2015-03-10T18:00:00-04:00&lt;/start-valid-time&gt;\n
+        \     &lt;end-valid-time&gt;2015-03-11T06:00:00-04:00&lt;/end-valid-time&gt;\n
+        \     &lt;start-valid-time&gt;2015-03-11T06:00:00-04:00&lt;/start-valid-time&gt;\n
+        \     &lt;end-valid-time&gt;2015-03-11T18:00:00-04:00&lt;/end-valid-time&gt;\n
+        \     &lt;start-valid-time&gt;2015-03-11T18:00:00-04:00&lt;/start-valid-time&gt;\n
+        \     &lt;end-valid-time&gt;2015-03-12T06:00:00-04:00&lt;/end-valid-time&gt;\n
+        \     &lt;start-valid-time&gt;2015-03-12T06:00:00-04:00&lt;/start-valid-time&gt;\n
+        \     &lt;end-valid-time&gt;2015-03-12T18:00:00-04:00&lt;/end-valid-time&gt;\n
+        \     &lt;start-valid-time&gt;2015-03-12T18:00:00-04:00&lt;/start-valid-time&gt;\n
+        \     &lt;end-valid-time&gt;2015-03-13T06:00:00-04:00&lt;/end-valid-time&gt;\n
+        \     &lt;start-valid-time&gt;2015-03-13T06:00:00-04:00&lt;/start-valid-time&gt;\n
+        \     &lt;end-valid-time&gt;2015-03-13T18:00:00-04:00&lt;/end-valid-time&gt;\n
+        \     &lt;start-valid-time&gt;2015-03-13T18:00:00-04:00&lt;/start-valid-time&gt;\n
+        \     &lt;end-valid-time&gt;2015-03-14T06:00:00-04:00&lt;/end-valid-time&gt;\n
+        \   &lt;/time-layout&gt;\n    &lt;time-layout time-coordinate=&quot;local&quot;
+        summarization=&quot;24hourly&quot;&gt;\n      &lt;layout-key&gt;k-p5d-n1-3&lt;/layout-key&gt;\n
+        \     &lt;start-valid-time&gt;2015-03-09T06:00:00-04:00&lt;/start-valid-time&gt;\n
+        \     &lt;end-valid-time&gt;2015-03-14T06:00:00-04:00&lt;/end-valid-time&gt;\n
+        \   &lt;/time-layout&gt;\n    &lt;parameters applicable-location=&quot;point1&quot;&gt;\n
+        \     &lt;temperature type=&quot;maximum&quot; units=&quot;Fahrenheit&quot;
+        time-layout=&quot;k-p24h-n5-1&quot;&gt;\n        &lt;name&gt;Daily Maximum
+        Temperature&lt;/name&gt;\n        &lt;value&gt;55&lt;/value&gt;\n        &lt;value&gt;52&lt;/value&gt;\n
+        \       &lt;value&gt;59&lt;/value&gt;\n        &lt;value&gt;55&lt;/value&gt;\n
+        \       &lt;value&gt;49&lt;/value&gt;\n      &lt;/temperature&gt;\n      &lt;temperature
+        type=&quot;minimum&quot; units=&quot;Fahrenheit&quot; time-layout=&quot;k-p24h-n5-1&quot;&gt;\n
+        \       &lt;name&gt;Daily Minimum Temperature&lt;/name&gt;\n        &lt;value&gt;37&lt;/value&gt;\n
+        \       &lt;value&gt;45&lt;/value&gt;\n        &lt;value&gt;40&lt;/value&gt;\n
+        \       &lt;value&gt;39&lt;/value&gt;\n        &lt;value&gt;43&lt;/value&gt;\n
+        \     &lt;/temperature&gt;\n      &lt;probability-of-precipitation type=&quot;12
+        hour&quot; units=&quot;percent&quot; time-layout=&quot;k-p12h-n10-2&quot;&gt;\n
+        \       &lt;name&gt;12 Hourly Probability of Precipitation&lt;/name&gt;\n
+        \       &lt;value&gt;5&lt;/value&gt;\n        &lt;value&gt;11&lt;/value&gt;\n
+        \       &lt;value&gt;63&lt;/value&gt;\n        &lt;value&gt;66&lt;/value&gt;\n
+        \       &lt;value&gt;23&lt;/value&gt;\n        &lt;value&gt;5&lt;/value&gt;\n
+        \       &lt;value&gt;5&lt;/value&gt;\n        &lt;value&gt;31&lt;/value&gt;\n
+        \       &lt;value&gt;54&lt;/value&gt;\n        &lt;value&gt;55&lt;/value&gt;\n
+        \     &lt;/probability-of-precipitation&gt;\n      &lt;weather time-layout=&quot;k-p24h-n5-1&quot;&gt;\n
+        \       &lt;name&gt;Weather Type, Coverage, and Intensity&lt;/name&gt;\n        &lt;weather-conditions
+        weather-summary=&quot;Mostly Cloudy&quot;/&gt;\n        &lt;weather-conditions
+        weather-summary=&quot;Rain Likely&quot;&gt;\n          &lt;value coverage=&quot;likely&quot;
+        intensity=&quot;moderate&quot; weather-type=&quot;rain&quot; qualifier=&quot;none&quot;/&gt;\n
+        \       &lt;/weather-conditions&gt;\n        &lt;weather-conditions weather-summary=&quot;Slight
+        Chance Rain Showers&quot;&gt;\n          &lt;value coverage=&quot;slight chance&quot;
+        intensity=&quot;light&quot; weather-type=&quot;rain showers&quot; qualifier=&quot;none&quot;/&gt;\n
+        \       &lt;/weather-conditions&gt;\n        &lt;weather-conditions weather-summary=&quot;Chance
+        Rain/Freezing Rain&quot;&gt;\n          &lt;value coverage=&quot;chance&quot;
+        intensity=&quot;light&quot; weather-type=&quot;rain&quot; qualifier=&quot;none&quot;/&gt;\n
+        \         &lt;value coverage=&quot;chance&quot; intensity=&quot;light&quot;
+        additive=&quot;and&quot; weather-type=&quot;freezing rain&quot; qualifier=&quot;none&quot;/&gt;\n
+        \         &lt;value coverage=&quot;chance&quot; intensity=&quot;light&quot;
+        additive=&quot;and&quot; weather-type=&quot;ice pellets&quot; qualifier=&quot;none&quot;/&gt;\n
+        \       &lt;/weather-conditions&gt;\n        &lt;weather-conditions weather-summary=&quot;Rain
+        Likely&quot;&gt;\n          &lt;value coverage=&quot;likely&quot; intensity=&quot;light&quot;
+        weather-type=&quot;rain&quot; qualifier=&quot;none&quot;/&gt;\n        &lt;/weather-conditions&gt;\n
+        \     &lt;/weather&gt;\n      &lt;conditions-icon type=&quot;forecast-NWS&quot;
+        time-layout=&quot;k-p24h-n5-1&quot;&gt;\n        &lt;name&gt;Conditions Icons&lt;/name&gt;\n
+        \       &lt;icon-link&gt;http://www.nws.noaa.gov/weather/images/fcicons/bkn.jpg&lt;/icon-link&gt;\n
+        \       &lt;icon-link&gt;http://www.nws.noaa.gov/weather/images/fcicons/ra70.jpg&lt;/icon-link&gt;\n
+        \       &lt;icon-link&gt;http://www.nws.noaa.gov/weather/images/fcicons/hi_shwrs20.jpg&lt;/icon-link&gt;\n
+        \       &lt;icon-link&gt;http://www.nws.noaa.gov/weather/images/fcicons/fzra30.jpg&lt;/icon-link&gt;\n
+        \       &lt;icon-link&gt;http://www.nws.noaa.gov/weather/images/fcicons/ra60.jpg&lt;/icon-link&gt;\n
+        \     &lt;/conditions-icon&gt;\n      &lt;hazards time-layout=&quot;k-p5d-n1-3&quot;&gt;\n
+        \       &lt;name&gt;Watches, Warnings, and Advisories&lt;/name&gt;\n        &lt;hazard-conditions
+        xsi:nil=&quot;true&quot;/&gt;\n      &lt;/hazards&gt;\n    &lt;/parameters&gt;\n
+        \ &lt;/data&gt;\n&lt;/dwml&gt;\n</dwmlByDayOut></ns1:NDFDgenByDayLatLonListResponse></SOAP-ENV:Body></SOAP-ENV:Envelope>"
     http_version: 
-  recorded_at: Thu, 26 Feb 2015 17:05:21 GMT
+  recorded_at: Mon, 09 Mar 2015 16:11:12 GMT
 recorded_with: VCR 2.9.3

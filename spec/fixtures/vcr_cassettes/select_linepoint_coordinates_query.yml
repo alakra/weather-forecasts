@@ -7,10 +7,8 @@ http_interactions:
       encoding: US-ASCII
       string: ''
     headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - "*/*"
+      - ! '*/*'
       User-Agent:
       - Ruby
   response:
@@ -31,12 +29,12 @@ http_interactions:
       Content-Type:
       - application/wsdl+xml
       Date:
-      - Thu, 26 Feb 2015 17:05:26 GMT
+      - Mon, 09 Mar 2015 16:11:12 GMT
       Connection:
       - keep-alive
     body:
-      encoding: UTF-8
-      string: "<?xml version=\"1.0\"?>\n\n<!--   **********************************************************************
+      encoding: US-ASCII
+      string: ! "<?xml version=\"1.0\"?>\n\n<!--   **********************************************************************
         \  \n                                                                           \n
         \      ndfdXML.wsdl   \n\n       John L. Schattel          MDL                4
         July 2007  \n       Aniesha L. Alford\n       Red Hat Linux                                Apache
@@ -380,26 +378,24 @@ http_interactions:
         \     <soap:address location=\"http://graphical.weather.gov/xml/SOAP_server/ndfdXMLserver.php\"/>\n
         \  </port>\n</service>\n\n</definitions>\n"
     http_version: 
-  recorded_at: Thu, 26 Feb 2015 17:05:26 GMT
+  recorded_at: Mon, 09 Mar 2015 16:11:12 GMT
 - request:
     method: post
     uri: http://graphical.weather.gov/xml/SOAP_server/ndfdXMLserver.php
     body:
-      encoding: UTF-8
+      encoding: US-ASCII
       string: <?xml version="1.0" encoding="UTF-8"?><env:Envelope xmlns:xsd="http://www.w3.org/2001/XMLSchema"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl"
         xmlns:env="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ins0="http://graphical.weather.gov/xml/DWMLgen/schema/DWML.xsd"><env:Body><tns:LatLonListLine><endPoint1Lat>39.547101</endPoint1Lat><endPoint1Lon>-105.215759</endPoint1Lon><endPoint2Lat>39.991484</endPoint2Lat><endPoint2Lon>-104.704895</endPoint2Lon></tns:LatLonListLine></env:Body></env:Envelope>
     headers:
       Soapaction:
-      - '"http://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl#LatLonListLine"'
+      - ! '"http://graphical.weather.gov/xml/DWMLgen/wsdl/ndfdXML.wsdl#LatLonListLine"'
       Content-Type:
       - text/xml;charset=UTF-8
       Content-Length:
       - '579'
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
-      - "*/*"
+      - ! '*/*'
       User-Agent:
       - Ruby
   response:
@@ -410,25 +406,23 @@ http_interactions:
       Server:
       - Apache/2.2.15 (Red Hat)
       X-Nids-Serverid:
-      - www4.md
+      - www5.mo
       X-Soap-Server:
       - NuSOAP/0.9.5 (1.123)
       Content-Type:
       - text/xml; charset=ISO-8859-1
-      Vary:
-      - Accept-Encoding
       Cache-Control:
       - max-age=180
       Expires:
-      - Thu, 26 Feb 2015 17:08:26 GMT
+      - Mon, 09 Mar 2015 16:14:13 GMT
       Date:
-      - Thu, 26 Feb 2015 17:05:26 GMT
+      - Mon, 09 Mar 2015 16:11:13 GMT
       Content-Length:
       - '1138'
       Connection:
       - keep-alive
     body:
-      encoding: UTF-8
+      encoding: US-ASCII
       string: <?xml version="1.0" encoding="ISO-8859-1"?><SOAP-ENV:Envelope SOAP-ENV:encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
         xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"><SOAP-ENV:Body><ns1:LatLonListLineResponse
@@ -440,5 +434,5 @@ http_interactions:
         39.797095,-104.938052 39.844289,-104.884992 39.891456,-104.831884 39.938596,-104.778728
         39.985708,-104.725524&lt;/latLonList&gt;&lt;/dwml&gt;</listLatLonOut></ns1:LatLonListLineResponse></SOAP-ENV:Body></SOAP-ENV:Envelope>
     http_version: 
-  recorded_at: Thu, 26 Feb 2015 17:05:26 GMT
+  recorded_at: Mon, 09 Mar 2015 16:11:12 GMT
 recorded_with: VCR 2.9.3
