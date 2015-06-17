@@ -5,9 +5,6 @@ ENV["ENV"] = "test"
 # require 'simplecov'
 # SimpleCov.start
 
-require 'coveralls'
-Coveralls.wear!
-
 require 'weather-forecasts'
 
 Bundler.require(:default, WeatherForecasts.env)

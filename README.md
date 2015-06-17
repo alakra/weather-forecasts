@@ -3,9 +3,7 @@
 [![Gem Version](https://badge.fury.io/rb/weather-forecasts.svg)](http://badge.fury.io/rb/weather-forecasts)
 [![Build Status](https://travis-ci.org/alakra/weather-forecasts.svg?branch=master)](https://travis-ci.org/alakra/weather-forecasts)
 [![Dependency Status](https://gemnasium.com/alakra/weather-forecasts.png)](https://gemnasium.com/alakra/weather-forecasts)
-[![Coverage Status](https://coveralls.io/repos/alakra/weather-forecasts/badge.png?branch=master)](https://coveralls.io/r/alakra/weather-forecasts?branch=master)
 [![Code Climate](https://codeclimate.com/github/alakra/weather-forecasts.png)](https://codeclimate.com/github/alakra/weather-forecasts)
-[![Inline docs](http://inch-ci.org/github/alakra/weather-forecasts.png)](http://inch-ci.org/github/alakra/weather-forecasts)
 
 ## Summary
 
