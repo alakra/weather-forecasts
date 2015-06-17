@@ -23,13 +23,13 @@ Gem::Specification.new do |s|
 
   s.executables << 'wf-console'
 
-  s.add_runtime_dependency 'dwml', '~> 1.1.4', '>= 1.1.4'
-  s.add_runtime_dependency 'savon', '~> 2.10.0', '>= 2.10.0'
-  s.add_runtime_dependency 'httpi', '~>2.3.0', '>= 2.3.0'
-  s.add_runtime_dependency 'nokogiri', '~> 1.6.1', '>= 1.6.1'
-  s.add_runtime_dependency 'multi_json', '~> 1.11.0', '>= 1.11.0'
-  s.add_runtime_dependency 'activesupport', '~> 4.2.0', '>= 4.2.0'
-  s.add_runtime_dependency 'http_logger', '~> 0.5.1', '>= 0.5.1'
+  s.add_runtime_dependency 'dwml', '~> 1.1.4'
+  s.add_runtime_dependency 'savon', '~> 2.10.0'
+  s.add_runtime_dependency 'httpi', '~>2.3.0'
+  s.add_runtime_dependency 'nokogiri', '~> 1.6.1'
+  s.add_runtime_dependency 'multi_json', '~> 1.11.0'
+  s.add_runtime_dependency 'activesupport', '~> 4.2.2'
+  s.add_runtime_dependency 'http_logger', '~> 0.5.1'
 
   s.post_install_message = "To start querying weather forecasts immediately, type `wf-console`."
 
